@@ -1,15 +1,638 @@
----
-layout: default
----
+<!DOCTYPE html>
+<!-- saved from url=(0029)https://www.anshumandhar.com/ -->
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US" class="yui3-js-enabled js flexbox canvas canvastext webgl no-touch hashchange history draganddrop rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions video audio svg inlinesvg svgclippaths wf-europa-n4-active wf-europa-n7-active wf-europa-i4-active wf-europa-n3-active wf-europa-i3-active wf-europa-i7-active wf-active" style=""><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important"></div><div id="twoseven-scripts" data-info="Scripts added by TwoSeven extension" style="display: none !important; position: static !important; top: 0px !important; left: 0px !important; width: 0px !important; height: 0px !important;"><script async="" src="./Anshuman Dhar&#39;s Portfolio_files/analytics.js"></script><script type="text/javascript" id="__tmpScript-311634685" data-added-by-two-seven="1">(function() {
+    window.twoseven = {};
+  })();</script><script type="text/javascript" id="__tmpScript-31334027" data-added-by-two-seven="1">(function() {
+    window.twoseven.waitForDOMNode = async function waitForDOMNode(e,t=document){e=e||{};const{type:n,value:o}=e;if(!n||!o)throw new Error("Must specify identifier");let s=o;switch(n){case"tag":s=o.toUpperCase()}if("check"!==n){const e=await i({type:"selector",value:s},[],t);if(e)return new Promise(t=>t(e))}async function i({type:e,value:t},n,o){let s;switch(e){case"tag":s=n.find(e=>e.tagName===t);break;case"selector":s=o.querySelector(t);break;case"check":for(const e of n){if(await t(e))return e}}return s}return new Promise((e,o)=>{const r=new MutationObserver(async o=>{for(const a of o)if("childList"===a.type){const o=Array.from(a.addedNodes),c=await i({type:n,value:s},o,t);if(c)return r.disconnect(),e(c)}});r.observe(t,{childList:!0,subtree:!0})})};
+  })();</script><script type="text/javascript" id="__tmpScript-86189308" data-added-by-two-seven="1">(function() {
+    
+  window.twoseven.reportError = function reportError(e,t,n){"string"==typeof n&&(n={message:n}),Object.assign(n,{error:{message:t.message,stack:t.stack}}),window.tsExtGetPostToParent()({name:name,tag:e,action:"report-error",json:n}),console.error(JSON.stringify(n.error))}
+;
+  })();</script><script type="text/javascript" id="__tmpScript-377272068" data-added-by-two-seven="1">(function() {
+    
+  window.twosevenHmsToSecondsOnly = function(str) {
+      var p = str.split(':'),
+          s = 0, m = 1;
 
-<div id="site">
-  {% include switch.html %}
-  {% include intro.html %}
-  {% include background.html %}
-  {% include skills.html %}
-  {% include experience.html %}
-  {% include featured-projects.html %}
-  {% include other-projects.html %}
-  {% include footer.html %}
-  {% include top-button.html %}
+      while (p.length > 0) {
+          s += m * parseInt(p.pop(), 10);
+          m *= 60;
+      }
+
+      return s;
+  }
+;
+  })();</script><script type="text/javascript" id="__tmpScript-191867861" data-added-by-two-seven="1">(function() {
+    window.twosevenExtLog = function twosevenExtLog(e,o,c){o||(o=e,e=void 0);let n=c||"black";if(c)switch(c){case"success":n="Green";break;case"info":n="DodgerBlue";break;case"error":n="Red";break;case"warning":n="Orange";break;default:n=c}e?console.log("%c"+e+": "+o,`color:${n}`):console.log("%c"+o,`color:${n}`)};
+  })();</script><script type="text/javascript" id="__tmpScript-815465748" data-added-by-two-seven="1">(function() {
+    
+  document.twosevenGET = function(url, callback) {
+    var xmlhttp = new XMLHttpRequest();
+
+    xmlhttp.onreadystatechange = function() {
+      if (xmlhttp.readyState == XMLHttpRequest.DONE ) {
+        if (xmlhttp.status == 200) {
+          callback(null, xmlhttp.responseText);
+        } else {
+          callback('something else other than 200 was returned', '');
+        }
+      }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+  };
+;
+  })();</script><script type="text/javascript" id="__tmpScript-466060470" data-added-by-two-seven="1">(function() {
+    
+  window.triggerEvent = function(e,t,n,o=!1){let s;window.twosevenScriptsDiv&&n&&"object"==typeof n&&(console.warn(`WARNING: Attempting to send an object via event.detail from CS->Page does not work on Firefox: ${JSON.stringify(n)}`),console.error((new Error).stack)),s=o?n:{data:n};var i=new CustomEvent(t,{bubbles:!0,composed:!0,detail:s});e.dispatchEvent(i)}
+;
+  })();</script><script type="text/javascript" id="__tmpScript-972945853" data-added-by-two-seven="1">(function() {
+    window.twoseven.postTo = async function postTo(e,t,n=!1){let o;return t.name=t.name||name,o=n?new Promise(e=>{const n=`ack-${t.action}-${1e9*Math.random()|0}`;t.ack={event:n};window.debug&&["play","pause","currentTime"].some(e=>t.action.includes(e)),window.addEventListener("message",function t({data:o={}}){o.action===n&&(window.removeEventListener("message",t),e(o.json))})}):new Promise(e=>e()),e.postMessage(t,"*"),o};
+  })();</script><script type="text/javascript" id="__tmpScript-905683924" data-added-by-two-seven="1">(function() {
+    window.tsExtGetPostTo = function tsExtGetPostTo(){return window.twoseven&&window.twoseven.postTo||window.postTo};
+  })();</script><script type="text/javascript" id="__tmpScript-120978117" data-added-by-two-seven="1">(function() {
+    window.tsExtGetPostToParent = function tsExtGetPostToParent(){return window.twoseven&&window.twoseven.postToParent||window.postToParent};
+  })();</script><script type="text/javascript" id="__tmpScript-119368780" data-added-by-two-seven="1">(function() {
+    window.twoseven.postResponse = async function postResponse(e,t){const{source:n,data:{ack:{event:o}}}=e;window.tsExtGetPostTo()(n,{action:o,json:t})};
+  })();</script><script type="text/javascript" id="__tmpScript-887955175" data-added-by-two-seven="1">(function() {
+    window.twoseven.postToParent = async function postToParent(e,t=!1){return window.tsExtGetPostTo()(window.parent,e,t)};
+  })();</script><script type="text/javascript" id="__tmpScript-944549566" data-added-by-two-seven="1">(function() {
+    window.twoseven.postToTop = async function postToTop(e,t=!1){return window.tsExtGetPostTo()(window.top,e,t)};
+  })();</script><script type="text/javascript" id="__tmpScript-558844997" data-added-by-two-seven="1">(function() {
+    
+  window.twoseven.getFromStorage = e=>new Promise((t,n)=>{const o="get-from-storage-"+(1e9*Math.random()|0);window.addEventListener(o,e=>{window.removeEventListener(o,this);const{detail:{data:{value:n}}}=e;t(n)}),triggerEvent(window,"get-from-storage",{key:e,evt:o})})
+  window.twoseven.saveToStorage = e=>{triggerEvent(window,"save-to-storage",e)}
+;
+  })();</script><script type="text/javascript" id="__tmpScript-411764990" data-added-by-two-seven="1">(function() {
+    
+  function attachHistoryListeners(){var e=history.pushState;history.pushState=function(t,n,o){return"function"==typeof history.onpushstate&&history.onpushstate({state:t}),triggerEvent(window,"pushstate",{uri:o}),e.apply(history,arguments)};var t=history.replaceState;history.replaceState=function(e){return"function"==typeof history.onreplacestate&&history.onreplacestate({state:e}),t.apply(history,arguments)}}
+  attachHistoryListeners()
+;
+  })();</script><script type="text/javascript" id="__tmpScript-645097048" data-added-by-two-seven="1">(function() {
+    window.twoseven.once = function once(e,t,n){e.addEventListener(t,function o(s){e.removeEventListener(t,o),n(s)})};
+  })();</script><script type="text/javascript" id="__tmpScript-496365511" data-added-by-two-seven="1">(function() {
+    
+  window.twoseven.isOnTwoSevenTab = async () => {
+    const result = await window.twoseven.postTo(window, { action: 'is-on-twoseven-tab' }, true)
+    return result
+  }
+;
+  })();</script><script type="text/javascript" id="__tmpScript-340284055" data-added-by-two-seven="1">(function() {
+    
+  window.twoseven.isPaused = async () => {
+    const result = await window.twoseven.postTo(window, { action: 'twoseven:pause-state' }, true)
+    return result
+  }
+;
+  })();</script><script type="text/javascript" id="__tmpScript-265670707" data-added-by-two-seven="1">(function() {
+    
+      const modal = document.querySelector('.twoseven-ext-tab-media-modal')
+      const modalCloseBtn = modal.querySelector('.close')
+      function closeModal () {
+        modal.style.display = 'none'
+        const frame = document.querySelector('#twoseven-ext-tab-media-iframe').contentWindow
+        frame.postMessage({
+          __evt_name: 'modal-hide'
+        }, '*')
+      }
+      modalCloseBtn.onclick = closeModal
+
+      window.onmessage = function (e) {
+        if (e.data.__evt_name === 'modal-hide') {
+          closeModal()
+        }
+      }
+
+      window.twoseven.closeTabMediaModal = closeModal
+
+      window.onclick = function (e) {
+        if (e.target.id === 'twoseven-ext-tab-media-modal' && modal.style.display === 'block') {
+            closeModal()
+        }
+      }
+    ;
+  })();</script></div><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- This is Squarespace. --><!-- oval-blue-ylsk -->
+<!--<base href="">--><base href=".">
+
+<title>Anshuman Dhar's Portfolio</title>
+<link rel="shortcut icon" type="image/png" href="https://images.squarespace-cdn.com/content/v1/5b5c75daaa49a1a13621c537/1543088856108-84GR2GAXEISXC5HY7HEO/ke17ZwdGBToddI8pDm48kM7ZggdqlXV2mRvEzkY30kBZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7SRUeo5q1QCP5W3CVI481czDNF6LpaGXiSqUnmN6x5NoIniRTVadHT31IuvIme_LmA/favicon.ico?format=100w">
+<link rel="canonical" href="https://www.anshumandhar.com/" data-ajax-meta="binded">
+<meta property="og:site_name" content="Anshuman Dhar&#39;s Portfolio" data-ajax-meta="binded">
+<meta property="og:title" content="Anshuman Dhar&#39;s Portfolio" data-ajax-meta="binded">
+<meta property="og:url" content="https://www.anshumandhar.com" data-ajax-meta="binded">
+<meta property="og:type" content="website" data-ajax-meta="binded">
+<meta property="og:description" content="Hello, I’m Anshuman   a designer passionate about the future of tech and making lives easier." data-ajax-meta="binded">
+<meta property="og:image" content="http://static1.squarespace.com/static/5b5c75daaa49a1a13621c537/t/5bf9aadeb8a045b4c025a838/1543088862817/v3_favicon.png?format=1500w" data-ajax-meta="binded">
+<meta property="og:image:width" content="212" data-ajax-meta="binded">
+<meta property="og:image:height" content="212" data-ajax-meta="binded">
+<meta itemprop="name" content="Anshuman Dhar&#39;s Portfolio" data-ajax-meta="binded">
+<meta itemprop="url" content="https://www.anshumandhar.com" data-ajax-meta="binded">
+<meta itemprop="description" content="Hello, I’m Anshuman   a designer passionate about the future of tech and making lives easier." data-ajax-meta="binded">
+<meta itemprop="thumbnailUrl" content="http://static1.squarespace.com/static/5b5c75daaa49a1a13621c537/t/5bf9aadeb8a045b4c025a838/1543088862817/v3_favicon.png?format=1500w" data-ajax-meta="binded">
+<link rel="image_src" href="http://static1.squarespace.com/static/5b5c75daaa49a1a13621c537/t/5bf9aadeb8a045b4c025a838/1543088862817/v3_favicon.png?format=1500w">
+<meta itemprop="image" content="http://static1.squarespace.com/static/5b5c75daaa49a1a13621c537/t/5bf9aadeb8a045b4c025a838/1543088862817/v3_favicon.png?format=1500w" data-ajax-meta="binded">
+<meta name="twitter:title" content="Anshuman Dhar&#39;s Portfolio" data-ajax-meta="binded">
+<meta name="twitter:image" content="http://static1.squarespace.com/static/5b5c75daaa49a1a13621c537/t/5bf9aadeb8a045b4c025a838/1543088862817/v3_favicon.png?format=1500w" data-ajax-meta="binded">
+<meta name="twitter:url" content="https://www.anshumandhar.com" data-ajax-meta="binded">
+<meta name="twitter:card" content="summary" data-ajax-meta="binded">
+<meta name="twitter:description" content="Hello, I’m Anshuman   a designer passionate about the future of tech and making lives easier." data-ajax-meta="binded">
+<meta name="description" content="" data-ajax-meta="binded">
+<script type="text/javascript" src="./Anshuman Dhar&#39;s Portfolio_files/uwY8U68Gjtmzvo_0a-lVnPpOoFD6XsYA1Rnf1ehYJvSfeGtffFHN4UJLFRbh52jhWDmKFAwaFAsyjAIX5AIUjQIDFRJUjD9DFU7PMPG0daZydfuKdYm8OW8CShC0SaBujW48Sagyjh90jhNlOeB0ShyudAB0ZeyySKoRdhXCdeNRjAUGdaFXOeNhjA3ljcUuZPuodYFnO1FUiABkZWF3jAF8OcFzdPUaiaS0jAoD-YmljAoq-eBkOcFzdPUa.js"></script>
+<style type="text/css">@font-face{font-family:europa;src:url(https://use.typekit.net/af/3e64fb/00000000000000003b9b12fe/27/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/3e64fb/00000000000000003b9b12fe/27/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/3e64fb/00000000000000003b9b12fe/27/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:europa;src:url(https://use.typekit.net/af/4eabcf/00000000000000003b9b12fd/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/4eabcf/00000000000000003b9b12fd/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/4eabcf/00000000000000003b9b12fd/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:europa;src:url(https://use.typekit.net/af/f3ba4f/00000000000000003b9b12fa/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/f3ba4f/00000000000000003b9b12fa/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/f3ba4f/00000000000000003b9b12fa/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:europa;src:url(https://use.typekit.net/af/a386b3/00000000000000003b9b12f9/27/l?subset_id=2&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/a386b3/00000000000000003b9b12f9/27/d?subset_id=2&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/a386b3/00000000000000003b9b12f9/27/a?subset_id=2&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;}@font-face{font-family:europa;src:url(https://use.typekit.net/af/e32ad9/00000000000000003b9b12fb/27/l?subset_id=2&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/e32ad9/00000000000000003b9b12fb/27/d?subset_id=2&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/e32ad9/00000000000000003b9b12fb/27/a?subset_id=2&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:europa;src:url(https://use.typekit.net/af/a6fa4a/00000000000000003b9b12fc/27/l?subset_id=2&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/a6fa4a/00000000000000003b9b12fc/27/d?subset_id=2&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/a6fa4a/00000000000000003b9b12fc/27/a?subset_id=2&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}</style><script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script type="text/javascript">SQUARESPACE_ROLLUPS = {};</script>
+<script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-61b0779ad12a30418f8e3-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common');</script>
+<script crossorigin="anonymous" src="./Anshuman Dhar&#39;s Portfolio_files/common-61b0779ad12a30418f8e3-min.en-US.js"></script><script crossorigin="anonymous" src="./Anshuman Dhar&#39;s Portfolio_files/performance-a289d1b46feddc2f27b2f-min.en-US.js" defer=""></script><script data-name="static-context">Static = window.Static || {}; Static.SQUARESPACE_CONTEXT = {"facebookAppId":"314192535267336","facebookApiVersion":"v6.0","rollups":{"squarespace-announcement-bar":{"js":"//assets.squarespace.com/universal/scripts-compressed/announcement-bar-220b56b8becc2d2da3615-min.en-US.js"},"squarespace-audio-player":{"css":"//assets.squarespace.com/universal/styles-compressed/audio-player-52bdd87acccf92a19703e60e09c654bd-min.css","js":"//assets.squarespace.com/universal/scripts-compressed/audio-player-3dcc50988172ba559ac37-min.en-US.js"},"squarespace-blog-collection-list":{"css":"//assets.squarespace.com/universal/styles-compressed/blog-collection-list-d41d8cd98f00b204e9800998ecf8427e-min.css","js":"//assets.squarespace.com/universal/scripts-compressed/blog-collection-list-f8cb1dfc3eb0dd3db1bcf-min.en-US.js"},"squarespace-calendar-block-renderer":{"css":"//assets.squarespace.com/universal/styles-compressed/calendar-block-renderer-4f3510b5c04f8e4be98207ec9833bccd-min.css","js":"//assets.squarespace.com/universal/scripts-compressed/calendar-block-renderer-e0b2e226f419530cdb010-min.en-US.js"},"squarespace-chartjs-helpers":{"css":"//assets.squarespace.com/universal/styles-compressed/chartjs-helpers-9935a41d63cf08ca108505d288c1712e-min.css","js":"//assets.squarespace.com/universal/scripts-compressed/chartjs-helpers-2c68fb9482b678c64e6ab-min.en-US.js"},"squarespace-comments":{"css":"//assets.squarespace.com/universal/styles-compressed/comments-1637eb4ee93bed59528921026e024bf4-min.css","js":"//assets.squarespace.com/universal/scripts-compressed/comments-deab2d9494d6eb2b34e43-min.en-US.js"},"squarespace-commerce-cart":{"js":"//assets.squarespace.com/universal/scripts-compressed/commerce-cart-a6357906a16fabcdd3d8e-min.en-US.js"},"squarespace-dialog":{"css":"//assets.squarespace.com/universal/styles-compressed/dialog-afeb96ba160fb642a2d98c892a956065-min.css","js":"//assets.squarespace.com/universal/scripts-compressed/dialog-aad1730b4ded1ecdbfa91-min.en-US.js"},"squarespace-events-collection":{"css":"//assets.squarespace.com/universal/styles-compressed/events-collection-4f3510b5c04f8e4be98207ec9833bccd-min.css","js":"//assets.squarespace.com/universal/scripts-compressed/events-collection-297b30e3dac189e98d3d5-min.en-US.js"},"squarespace-form-rendering-utils":{"js":"//assets.squarespace.com/universal/scripts-compressed/form-rendering-utils-86f0efa445fae11f66e8a-min.en-US.js"},"squarespace-forms":{"css":"//assets.squarespace.com/universal/styles-compressed/forms-d21f3e517c32f4caba9f220beea0666d-min.css","js":"//assets.squarespace.com/universal/scripts-compressed/forms-2ef726fc9fc108b3c9d6d-min.en-US.js"},"squarespace-gallery-collection-list":{"css":"//assets.squarespace.com/universal/styles-compressed/gallery-collection-list-d41d8cd98f00b204e9800998ecf8427e-min.css","js":"//assets.squarespace.com/universal/scripts-compressed/gallery-collection-list-fe816b1dc87c8603ccda5-min.en-US.js"},"squarespace-image-zoom":{"css":"//assets.squarespace.com/universal/styles-compressed/image-zoom-72b0ab7796582588032aa6472e2e2f14-min.css","js":"//assets.squarespace.com/universal/scripts-compressed/image-zoom-bb1da9d357e75297c989e-min.en-US.js"},"squarespace-pinterest":{"css":"//assets.squarespace.com/universal/styles-compressed/pinterest-d41d8cd98f00b204e9800998ecf8427e-min.css","js":"//assets.squarespace.com/universal/scripts-compressed/pinterest-d7fdd9d8e5f79382b6e62-min.en-US.js"},"squarespace-popup-overlay":{"css":"//assets.squarespace.com/universal/styles-compressed/popup-overlay-e984c5797664760d617b07bce15392a1-min.css","js":"//assets.squarespace.com/universal/scripts-compressed/popup-overlay-c2e8a0b11c42fdd47ce07-min.en-US.js"},"squarespace-product-quick-view":{"css":"//assets.squarespace.com/universal/styles-compressed/product-quick-view-3fa8fd4df0755e7a7878e60166ca3d61-min.css","js":"//assets.squarespace.com/universal/scripts-compressed/product-quick-view-97f56ba59f478ef3dd8b9-min.en-US.js"},"squarespace-products-collection-item-v2":{"css":"//assets.squarespace.com/universal/styles-compressed/products-collection-item-v2-72b0ab7796582588032aa6472e2e2f14-min.css","js":"//assets.squarespace.com/universal/scripts-compressed/products-collection-item-v2-6291a37b35e67bdd5908c-min.en-US.js"},"squarespace-products-collection-list-v2":{"css":"//assets.squarespace.com/universal/styles-compressed/products-collection-list-v2-72b0ab7796582588032aa6472e2e2f14-min.css","js":"//assets.squarespace.com/universal/scripts-compressed/products-collection-list-v2-d65affaed7c06ec91a16f-min.en-US.js"},"squarespace-search-page":{"css":"//assets.squarespace.com/universal/styles-compressed/search-page-207da8872118254c0a795bf9b187c205-min.css","js":"//assets.squarespace.com/universal/scripts-compressed/search-page-31a77a62961a62dde02d8-min.en-US.js"},"squarespace-search-preview":{"js":"//assets.squarespace.com/universal/scripts-compressed/search-preview-805a1d05b32f1d11e7f15-min.en-US.js"},"squarespace-share-buttons":{"js":"//assets.squarespace.com/universal/scripts-compressed/share-buttons-7c1fbc0aaa11505abebc3-min.en-US.js"},"squarespace-simple-liking":{"css":"//assets.squarespace.com/universal/styles-compressed/simple-liking-9ef41bf7ba753d65ec1acf18e093b88a-min.css","js":"//assets.squarespace.com/universal/scripts-compressed/simple-liking-6c6521811cb4d224b7103-min.en-US.js"},"squarespace-social-buttons":{"css":"//assets.squarespace.com/universal/styles-compressed/social-buttons-bf7788a87c794b73afd9d5c49f72f4f3-min.css","js":"//assets.squarespace.com/universal/scripts-compressed/social-buttons-03b7290e5437a04dfeda9-min.en-US.js"},"squarespace-tourdates":{"css":"//assets.squarespace.com/universal/styles-compressed/tourdates-d41d8cd98f00b204e9800998ecf8427e-min.css","js":"//assets.squarespace.com/universal/scripts-compressed/tourdates-9dfaf03dbd6539bd409ec-min.en-US.js"},"squarespace-website-overlays-manager":{"css":"//assets.squarespace.com/universal/styles-compressed/website-overlays-manager-68df56a8135961401cbd590171d6b04a-min.css","js":"//assets.squarespace.com/universal/scripts-compressed/website-overlays-manager-041f3cc788b9caeff75f5-min.en-US.js"}},"pageType":1,"website":{"id":"5b5c75daaa49a1a13621c537","identifier":"oval-blue-ylsk","websiteType":1,"contentModifiedOn":1590624861736,"cloneable":false,"hasBeenCloneable":false,"siteStatus":{},"language":"en-US","timeZone":"Asia/Kolkata","machineTimeZoneOffset":19800000,"timeZoneOffset":19800000,"timeZoneAbbr":"IST","siteTitle":"Anshuman Dhar's Portfolio","fullSiteTitle":"Anshuman Dhar's Portfolio","siteTagLine":"","siteDescription":"","logoImageId":"5c074e734d7a9cadddf1a1c0","socialLogoImageId":"5bf9aadeb8a045b4c025a838","shareButtonOptions":{"1":true,"2":true,"7":true,"8":true},"logoImageUrl":"//static1.squarespace.com/static/5b5c75daaa49a1a13621c537/t/5c074e734d7a9cadddf1a1c0/1590624861736/","socialLogoImageUrl":"//static1.squarespace.com/static/5b5c75daaa49a1a13621c537/t/5bf9aadeb8a045b4c025a838/1590624861736/","authenticUrl":"https://www.anshumandhar.com","internalUrl":"https://oval-blue-ylsk.squarespace.com","baseUrl":"https://www.anshumandhar.com","primaryDomain":"www.anshumandhar.com","sslSetting":3,"isHstsEnabled":false,"socialAccounts":[{"serviceId":14,"userId":"fsy5wxSD6P","userName":"anshuman-dhar-7aa2b712b","screenname":"Anshuman Dhar","addedOn":1542638981667,"profileUrl":"http://www.linkedin.com/in/anshuman-dhar-7aa2b712b","iconUrl":"https://media.licdn.com/dms/image/C5603AQENwcHY_w4KeQ/profile-displayphoto-shrink_100_100/0?e=1548288000&v=beta&t=FFmkEiO_aY4K3On33i8hETYR1d37e-XeQBeV2PX259g","iconEnabled":true,"serviceName":"linkedin"},{"serviceId":32,"screenname":"Medium","addedOn":1542638113493,"profileUrl":"https://medium.com/@ElatedHooman","iconEnabled":true,"serviceName":"medium"},{"serviceId":18,"userId":"dharanshumee35","screenname":"dharanshumee35","addedOn":1542638141755,"profileUrl":"http://www.dribbble.com/dharanshumee35","iconEnabled":true,"serviceName":"dribbble"},{"serviceId":10,"userId":"335564564","userName":"anshuman.dhar","screenname":"Anshuman Dhar","addedOn":1542638355572,"profileUrl":"http://instagram.com/anshuman.dhar","iconUrl":"https://scontent.cdninstagram.com/vp/8ad094462b219bcdd5a116520ffb0431/5C81F4A3/t51.2885-19/s150x150/31463452_591012711256102_3759245532564815872_n.jpg","collectionId":"5bf2cb13f793929f5063d74a","iconEnabled":true,"serviceName":"instagram"},{"serviceId":4,"userId":"819633608184844288","userName":"Siang_117","screenname":"Anshuman Dhar","addedOn":1542638282494,"profileUrl":"https://twitter.com/Siang_117","iconUrl":"http://pbs.twimg.com/profile_images/1064054204266766337/Iz2eQ-Rp_normal.jpg","collectionId":"5bf2cacaa9e0289e1a06f928","iconEnabled":true,"serviceName":"twitter"}],"typekitId":"","statsMigrated":false,"imageMetadataProcessingEnabled":false,"screenshotId":"01e95f9c291930197a897982afa63e79a0eaa91884a49652a1cc3b587bd876cd","showOwnerLogin":false},"websiteSettings":{"id":"5b5c75daaa49a1a13621c539","websiteId":"5b5c75daaa49a1a13621c537","subjects":[],"country":"IN","state":"MH","simpleLikingEnabled":true,"mobileInfoBarSettings":{"style":1,"isContactEmailEnabled":false,"isContactPhoneNumberEnabled":false,"isLocationEnabled":false,"isBusinessHoursEnabled":false},"commentLikesAllowed":true,"commentAnonAllowed":true,"commentThreaded":true,"commentApprovalRequired":false,"commentAvatarsOn":true,"commentSortType":2,"commentFlagThreshold":0,"commentFlagsAllowed":true,"commentEnableByDefault":true,"commentDisableAfterDaysDefault":0,"disqusShortname":"","commentsEnabled":false,"storeSettings":{"returnPolicy":null,"termsOfService":null,"privacyPolicy":null,"expressCheckout":false,"continueShoppingLinkUrl":"/","useLightCart":false,"showNoteField":false,"shippingCountryDefaultValue":"US","billToShippingDefaultValue":false,"showShippingPhoneNumber":true,"isShippingPhoneRequired":false,"showBillingPhoneNumber":true,"isBillingPhoneRequired":false,"currenciesSupported":["CHF","HKD","MXN","EUR","DKK","USD","CAD","MYR","NOK","THB","AUD","SGD","ILS","PLN","GBP","CZK","SEK","NZD","PHP","RUB"],"defaultCurrency":"USD","selectedCurrency":"USD","measurementStandard":1,"showCustomCheckoutForm":false,"enableMailingListOptInByDefault":false,"sameAsRetailLocation":false,"merchandisingSettings":{"scarcityEnabledOnProductItems":false,"scarcityEnabledOnProductBlocks":false,"scarcityMessageType":"DEFAULT_SCARCITY_MESSAGE","scarcityThreshold":10,"multipleQuantityAllowedForServices":true,"restockNotificationsEnabled":false,"restockNotificationsMailingListSignUpEnabled":false,"relatedProductsEnabled":false,"relatedProductsOrdering":"random","soldOutVariantsDropdownDisabled":false,"productComposerOptedIn":false},"isLive":false,"multipleQuantityAllowedForServices":true},"useEscapeKeyToLogin":true,"trialAssistantEnabled":true,"ssBadgeType":1,"ssBadgePosition":4,"ssBadgeVisibility":1,"ssBadgeDevices":1,"pinterestOverlayOptions":{"mode":"disabled"},"ampEnabled":false},"cookieSettings":{"isCookieBannerEnabled":false,"isRestrictiveCookiePolicyEnabled":false,"isRestrictiveCookiePolicyAbsolute":false,"cookieBannerText":"","cookieBannerTheme":"","cookieBannerVariant":"","cookieBannerPosition":"","cookieBannerCtaVariant":"","cookieBannerCtaText":""},"websiteCloneable":false,"collection":{"title":"All Work","id":"5bd9b4b88a922daf4af8f62c","fullUrl":"/","type":1},"subscribed":false,"appDomain":"squarespace.com","templateTweakable":true,"tweakJSON":{"align-alternate-caption-to-image":"false","aspect-ratio":"Auto","auto-color-banner-background":"false","auto-color-index-item-bg":"true","banner-height":"Medium","banner-image-alignment":"Center","banner-image-crop":"true","collapse-landscape-spacing":"false","full-bleed-banner":"false","full-bleed-index":"true","full-bleed-project":"true","gallery-arrow-style":"No Background","gallery-aspect-ratio":"3:2 Standard","gallery-auto-crop":"true","gallery-autoplay":"false","gallery-design":"Grid","gallery-info-overlay":"Show on Hover","gallery-loop":"false","gallery-navigation":"Bullets","gallery-show-arrows":"true","gallery-transitions":"Fade","galleryArrowBackground":"rgba(34,34,34,1)","galleryArrowColor":"rgba(255,255,255,1)","galleryAutoplaySpeed":"3","galleryCircleColor":"rgba(255,255,255,1)","galleryInfoBackground":"rgba(0, 0, 0, .7)","galleryThumbnailSize":"100px","gridSize":"300px","gridSpacing":"70px","index-item-alternate-sides":"false","index-item-alternate-widths":"true","index-item-category-background":"false","index-item-height":"Medium","index-item-image-alignment":"Center","index-item-image-crop":"false","index-item-title-background":"false","index-item-title-display":"On Hover","index-item-width":"Full","indexItemWidth":"10","indexItemsPerRow":"3","mobileItemsPerRow":"2","project-image-alignment":"Center","project-image-landscape-caption-style":"Offset","project-image-portrait-caption-style":"Offset","project-left-image-landscape-caption-style":"Standard","project-left-image-portrait-caption-style":"Standard","project-right-image-landscape-caption-style":"Standard","project-right-image-portrait-caption-style":"Standard","tabletItemsPerRow":"2","thumbnailRatio":"150","tweak-blog-list-columns":"2","tweak-blog-list-item-image-aspect-ratio-grid":"3:2 Standard","tweak-blog-list-item-image-aspect-ratio-stacked":"1:1 Square","tweak-blog-list-item-image-show":"true","tweak-blog-list-spacing":"80px","tweak-blog-list-style":"Grid","tweak-mobile-bar-position":"Top Fixed","tweak-mobile-bar-site-tagline-position":"Hide","tweak-page-transition-animation":"true","tweak-product-item-image-zoom-factor":"2.5","tweak-product-list-item-hover-behavior":"Show Alternate Image","tweak-product-list-items-per-row":"3","tweak-project-slide-transition":"true","tweak-related-products-items-per-row":"3","tweak-related-products-title-spacing":"50px","tweak-site-ajax-loading-enable":"true"},"templateId":"55dccafee4b04b8e0d7b6d4d","templateVersion":"7","pageFeatures":[1,2,4],"gmRenderKey":"QUl6YVN5Q0JUUk9xNkx1dkZfSUUxcjQ2LVQ0QWVUU1YtMGQ3bXk4","betaFeatureFlags":["ORDERS-SERVICE-refund-order-using-workflow","ORDER_SERVICE-submit-subscription-order-through-service","dg_downloads_from_fastly","commerce_product_composer_all_types","seven_one_image_overlay_opacity","gallery_settings_71","ORDER_SERVICE-submit-reoccurring-subscription-order-through-service","domain_info_via_registrar_service","seven_one_theme_mapper_v3","domains_transfer_flow_improvements","generic_iframe_loader_for_campaigns","newsletter_block_captcha","commerce_minimum_order_amount","demo_content_improvement","domain_locking_via_registrar_service","local_listings","onboarding_wizard_seven_one","domain_registration_via_registrar_service","commerce_subscription_order_delay","trust_arc_on_config","commerce_restock_notifications","blog_event_item_settings","gallery_captions_71","domains_allow_async_gsuite","ORDERS-SERVICE-reset-digital-goods-access-with-service","new_billing_system","ORDERS-SERVICE-cancel-order-using-workflow","global_animations","domains_use_new_domain_connect_strategy","donations_customer_accounts","seven_one_portfolio_hover_layouts","seven_one_fonts_panel_targeting","commerce_instagram_product_checkout_links","commerce_activation_experiment_add_payment_processor_card","campaigns_single_opt_in","domain_deletion_via_registrar_service","ORDERS-SERVICE-check-digital-good-access-with-service"],"yuiEliminationExperimentList":[{"name":"statsMigrationJobWidget-enabled","experimentType":"AB_TEST","variant":"true","containsError":false,"status":"ACTIVE"},{"name":"ContributionConfirmed-enabled","experimentType":"AB_TEST","variant":"false","containsError":false,"status":"ACTIVE"},{"name":"TextPusher-enabled","experimentType":"AB_TEST","variant":"true","containsError":false,"status":"ACTIVE"},{"name":"MenuItemWithProgress-enabled","experimentType":"AB_TEST","variant":"true","containsError":false,"status":"ACTIVE"},{"name":"imageProcJobWidget-enabled","experimentType":"AB_TEST","variant":"true","containsError":false,"status":"ACTIVE"},{"name":"QuantityChangePreview-enabled","experimentType":"AB_TEST","variant":"true","containsError":false,"status":"ACTIVE"},{"name":"CompositeModel-enabled","experimentType":"AB_TEST","variant":"false","containsError":false,"status":"ACTIVE"},{"name":"HasPusherMixin-enabled","experimentType":"AB_TEST","variant":"true","containsError":false,"status":"INACTIVE"},{"name":"ProviderList-enabled","experimentType":"AB_TEST","variant":"true","containsError":false,"status":"ACTIVE"},{"name":"MediaTracker-enabled","experimentType":"AB_TEST","variant":"false","containsError":false,"status":"ACTIVE"},{"name":"pushJobWidget-enabled","experimentType":"AB_TEST","variant":"true","containsError":false,"status":"ACTIVE"},{"name":"internal-enabled","experimentType":"AB_TEST","variant":"true","containsError":false,"status":"ACTIVE"},{"name":"BillingPanel-enabled","experimentType":"AB_TEST","variant":"false","containsError":false,"status":"ACTIVE"},{"name":"PopupOverlayEditor-enabled","experimentType":"AB_TEST","variant":"true","containsError":false,"status":"ACTIVE"},{"name":"CoverPagePicker-enabled","experimentType":"AB_TEST","variant":"true","containsError":false,"status":"ACTIVE"}],"impersonatedSession":false,"tzData":{"zones":[[330,null,"IST",null]],"rules":{}}};</script><script type="text/javascript"> SquarespaceFonts.loadViaContext(); Squarespace.load(window);</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://www.anshumandhar.com/work-1?format=rss">
+<script type="application/ld+json">{"url":"https://www.anshumandhar.com","name":"Anshuman Dhar's Portfolio","description":"","image":"//static1.squarespace.com/static/5b5c75daaa49a1a13621c537/t/5c074e734d7a9cadddf1a1c0/1590624861736/","@context":"http://schema.org","@type":"WebSite"}</script><!--[if gte IE 9]> <link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/5b5c75daaa49a1a13621c537/73/55dccafee4b04b8e0d7b6d4d/5b72f47840ec9ab798c8d7ff/958-05142015/1590624861720/site.css?&filterFeatures=false&part=1"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/5b5c75daaa49a1a13621c537/73/55dccafee4b04b8e0d7b6d4d/5b72f47840ec9ab798c8d7ff/958-05142015/1590624861720/site.css?&filterFeatures=false&part=2"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/5b5c75daaa49a1a13621c537/73/55dccafee4b04b8e0d7b6d4d/5b72f47840ec9ab798c8d7ff/958-05142015/1590624861720/site.css?&filterFeatures=false&part=3"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/5b5c75daaa49a1a13621c537/73/55dccafee4b04b8e0d7b6d4d/5b72f47840ec9ab798c8d7ff/958-05142015/1590624861720/site.css?&filterFeatures=false&part=4"/><![endif]-->
+<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/5b5c75daaa49a1a13621c537/73/55dccafee4b04b8e0d7b6d4d/5b72f47840ec9ab798c8d7ff/958-05142015/1590624861720/site.css?&filterFeatures=false&noMedia=true&part=1"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/5b5c75daaa49a1a13621c537/73/55dccafee4b04b8e0d7b6d4d/5b72f47840ec9ab798c8d7ff/958-05142015/1590624861720/site.css?&filterFeatures=false&noMedia=true&part=2"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/5b5c75daaa49a1a13621c537/73/55dccafee4b04b8e0d7b6d4d/5b72f47840ec9ab798c8d7ff/958-05142015/1590624861720/site.css?&filterFeatures=false&noMedia=true&part=3"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/5b5c75daaa49a1a13621c537/73/55dccafee4b04b8e0d7b6d4d/5b72f47840ec9ab798c8d7ff/958-05142015/1590624861720/site.css?&filterFeatures=false&noMedia=true&part=4"/><![endif]-->
+<!--[if !IE]> --><link rel="stylesheet" type="text/css" href="./Anshuman Dhar&#39;s Portfolio_files/site.css"><!-- <![endif]-->
+<script>Static.COOKIE_BANNER_CAPABLE = true;</script>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-131394065-1', 'auto');ga('send', 'pageview');</script><!-- End of Squarespace Headers -->
+    <script>(function(){var touchTest="ontouchstart"in window||navigator.msMaxTouchPoints;if(!touchTest){with(document.documentElement){className=className.replace(new RegExp("touch-styles"),"")}}})()</script>
+  <style type="text/css">:root topadblock, :root script[src^="http://free-shoutbox.net/app/webroot/shoutbox/sb.php?shoutbox="] + #freeshoutbox_content, :root input[onclick^="window.open('http://www.FriendlyDuck.com/"], :root img[alt^="Fuckbook"], :root iframe[src^="http://static.mozo.com.au/strips/"], :root iframe[id^="google_ads_iframe"], :root div[jscontroller="U835zd"] + c-wiz[jsrenderer="YnuqN"], :root div[id^="zergnet-widget"], :root div[id^="traffective-ad-"], :root div[id^="sticky_ad_"], :root div[id^="q1-adset-"], :root div[id^="proadszone-"], :root div[id^="mainads"], :root div[id^="lazyad-"], :root div[id^="gtm-ad-"], :root div[id^="google_dfp_"], :root div[id^="google_ads_iframe_"], :root div[id^="dmRosAdWrapper"], :root div[id^="div-gpt-ad"], :root div[id^="div-adtech-ad-"], :root div[id^="dfp-slot-"], :root div[id^="dfp-ad-"], :root div[id^="block-views-topheader-ad-block-"], :root div[id^="advt-"], :root div[id^="advads_"], :root div[id^="ads300_600-widget"], :root input[onclick^="window.open('http://www.friendlyduck.com/"], :root div[id^="ads300_250-widget"], :root div[id^="ads300_100-widget"], :root div[id^="ads250_250-widget"], :root div[id^="ads120_600-widget"], :root div[id^="adrotate_widgets-"], :root div[id^="adfox_"], :root div[id^="ad_script_"], :root div[id^="ad_rect_"], :root div[id^="ad_position_"], :root div[id^="ad-server-"], :root div[id^="ad-cid-"], :root div[id^="acm-ad-tag-"], :root div[id^="YFBMSN"], :root div[id^="ADV-SLOT-"], :root div[data-spotim-slot], :root div[data-role="sidebarAd"], :root div[data-native_ad], :root div[data-id-advertdfpconf], :root div[data-adunit], :root div[data-adunit-path], :root div[class^="proadszone-"], :root div[class^="pane-google-admanager-"], :root a[href^="http://adultgames.xxx/"], :root a[href^="http://semi-cod.com/clicks/"], :root div[class^="index_displayAd_"], :root a[href^="http://www.affbuzzads.com/affiliate/"], :root div[class^="index_adBeforeContent_"], :root div[class^="index_adAfterContent_"], :root a[href^="http://dwn.pushtraffic.net/"], :root div[class^="hp-ad-rect-"], :root div[class^="gemini-ad"], :root div[class^="block-openx-"], :root div[class^="ads-partner-"], :root div[class^="ad_border_"], :root a[href^="http://adprovider.adlure.net/"], :root div[class^="Ad__container"], :root div[class*="_AdInArticle_"], :root div[class^="ad_position_"], :root a[href^="http://www.afco2go.com/srv.php?"], :root div[aria-label="Ads"], :root div > [class][onclick*=".updateAnalyticsEvents"], :root a[href*="/servlet/click/zone?"], :root c-wiz[jsrenderer="YnuqN"] > div > div > .Rn1jbe, :root bottomadblock, :root a[href^="https://watchmygirlfriend.tv/"], :root aside[itemtype="https://schema.org/WPAdBlock"], :root a[href^="http://c.actiondesk.com/"], :root aside[id^="div-gpt-ad"], :root a[href^="http://lp.ezdownloadpro.info/"], :root a[href^="http://uploaded.net/ref/"], :root aside[id^="advads_ad_widget-"], :root aside[id^="adrotate_widgets-"], :root amp-ad-custom, :root [id*="MGWrap"], :root ad-desktop-sidebar, :root a[style="display:block;width:300px;min-height:250px"][href^="http://li.cnet.com/click?"], :root div[id^="div-ads-"], :root a[href^="http://at.atwola.com/"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[href^="http://popup.taboola.com/"], :root a[href^="//adbit.co/?a=Advertise&"], :root a[onmousedown^="this.href='/wp-content/embed-ad-content/"], :root div[class^="AdhesionAd_"], :root div[class^="Ad__bigBox"], :root div[role="navigation"] + c-wiz > script + div > .kxhcC, :root a[onclick*="//m.economictimes.com/etmack/click.htm"], :root a[href^="https://www.travelzoo.com/oascampaignclick/"], :root a[href^="https://www.share-online.biz/affiliate/"], :root a[href^="https://www.securegfm.com/"], :root DFP-AD, :root a[href^="//porngames.adult/?SID="], :root a[href^="https://www.oneclickroot.com/?tap_a="] > img, :root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="], :root a[href^="https://www.get-express-vpn.com/offer/"], :root a[href^="http://webgirlz.online/landing/"], :root a[href^="https://www.g4mz.com/"], :root .trc_related_container div[data-item-syndicated="true"], :root a[href^="https://www.firstload.com/affiliate/"], :root a[href^="https://www.clicktraceclick.com/"], :root a[href^="https://www.camyou.com/?cam="][href*="&track="], :root a[href^="https://www.bebi.com"], :root a[href^="https://www.awin1.com/cread.php?awinaffid="], :root a[href^="https://www.adskeeper.co.uk/"], :root a[href^="http://farm.plista.com/pets"], :root a[href^="https://windscribe.com/promo/"], :root a[href^="http://ad-emea.doubleclick.net/"], :root a[href^="https://understandsolar.com/signup/?lead_source="][href*="&tracking_code="], :root div[id^="tms-ad-dfp-"], :root a[href^="https://trust.zone/go/r.php?RID="], :root a[href^="https://trf.bannerator.com/"], :root a[href^="https://track.adform.net/"], :root a[href^="https://traffic.bannerator.com/"], :root a[href^="https://tracking.truthfinder.com/?a="], :root a[href^="https://track.ultravpn.com/"], :root a[href^="https://www.adultempire.com/"][href*="?partner_id="], :root a[href^="https://track.healthtrader.com/"], :root a[href^="https://track.clickmoi.xyz/"], :root a[href^="https://track.afftck.com/"], :root a[href^="https://control.trafficfabrik.com/"], :root a[href^="https://track.52zxzh.com/"], :root .ra[align="right"][width="30%"], :root a[href^="https://tour.mrskin.com/"], :root a[href^="https://www.what-sexdating.com/"], :root a[href^="https://tc.tradetracker.net/"] > img, :root a[href^="https://t.mobtya.com/"], :root a[href^="https://t.hrtyj.com/"], :root a[href^="https://t.hrtye.com/"], :root div[id^="ad_head_celtra_"], :root a[href^="https://t.grtyi.com/"], :root aside[id^="tn_ads_widget-"], :root a[href^="https://syndication.exoclick.com/splash.php?"], :root div[id^="ad-div-"], :root a[href^="https://secure.eveonline.com/ft/?aid="], :root div[class^="Display_displayAd"], :root a[href^="https://secure.bstlnk.com/"], :root a[href^="https://rev.adsession.com/"], :root div[id^="yandex_ad"], :root a[href^="http://y1jxiqds7v.com/"], :root a[href^="https://www.hotgirls4fuck.com/"], :root a[href^="https://www.pornhat.com/"][rel="nofollow"], :root AD-SLOT, :root a[href^="https://pubads.g.doubleclick.net/"], :root a[href^="https://prf.hn/click/"][href*="/adref:"], :root #rhs_block .mod > .gws-local-hotels__booking-module, :root a[href^="http://www.my-dirty-hobby.com/?sub="], :root a[href^="https://porndeals.com/?track="], :root a[href^="https://offerforge.net/"], :root a[href^="https://my-movie.club/"], :root a[href^="https://mk-cdn.net/"], :root a[href^="https://mk-ads.com/"], :root a[href^="https://medleyads.com/"], :root a[href*=".approvallamp.club/"], :root a[href^="https://landing1.brazzersnetwork.com"], :root a[href^="https://land.rk.com/landing/"], :root .lads[width="100%"][style="background:#FFF8DD"], :root a[href^="https://land.brazzersnetwork.com/landing/"], :root a[href^="https://members.linkifier.com/public/affiliateLanding?refCode="], :root a[href^="https://jmp.awempire.com/"], :root a[href^="https://incisivetrk.cvtr.io/click?"], :root a[href^="https://iactrivago.ampxdirect.com/"], :root .gbfwa > div[class$="_item"], :root a[href^="https://goraps.com/"], :root a[href^="http://www.usearchmedia.com/signup?"], :root a[onmousedown^="this.href='http://staffpicks.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[href^="https://googleads.g.doubleclick.net/pcs/click"], :root a[href^="http://cdn.adstract.com/"], :root a[href^="https://gogoman.me/"], :root a[href^="https://go.stripchat.com/"][href*="&campaignId="], :root a[href^="https://go.hpyrdr.com/"], :root a[href*=".inclk.com/"], :root a[href^="https://go.ad2up.com/"], :root a[href^="https://freeadult.games/"], :root a[href^="//nlkdom.com/"], :root a[onmousedown^="this.href='http://staffpicks.outbrain.com/network/redir?"][target="_blank"], :root a[href^="https://fonts.fontplace9.com/"], :root a[href^="http://clkmon.com/adServe/"], :root a[href^="https://flirtaescopa.com/"], :root [lazy-ad="leftthin_banner"], :root a[href^="https://dynamicadx.com/"], :root a[href^="http://wxdownloadmanager.com/dl/"], :root div[class^="local-feed-banner-ads"], :root .GFYY1SVE2 > .GFYY1SVD2 > .GFYY1SVG5, :root a[href^="https://djtcollectorclub.org/"][href*="?affiliate_id="], :root a[href^="https://retiremely.com/"], :root a[href^="https://cpmspace.com/"], :root a[href^="https://lingthatsparleso.info/"], :root a[href^="https://click.plista.com/pets"], :root a[href^="https://chaturbate.xyz/"], :root a[href^="http://look.djfiln.com/"], :root a[href^="https://chaturbate.jjgirls.com/"][href*="?tour="], :root a[href^="https://chaturbate.com/in/?tour="], :root a[href^="https://chaturbate.com/affiliates/"], :root .mod > ._jH + .rscontainer, :root a[href^="https://blackorange.go2cloud.org/"], :root a[href^="http://www.1clickdownloader.com/"], :root a[href^="https://www.googleadservices.com/pagead/aclk?"], :root a[href^="https://awentw.com/"], :root a[href^="http://adultfriendfinder.com/p/register.cgi?pid="], :root a[href^="https://www.popads.net/users/"], :root iframe[src^="http://ad.yieldmanager.com/"], :root a[href^="http://pubads.g.doubleclick.net/"], :root a[href^="https://sexdatingz.live/"], :root a[href^="//bwnjijl7w.com/"], :root a[href^="https://adultfriendfinder.com/go/page/landing"], :root a[href*="pussl3.com"], :root a[href^="https://adswick.com/"], :root ADS-RIGHT, :root .GKJYXHBF2 > .GKJYXHBE2 > .GKJYXHBH5, :root a[href^="https://adserver.adreactor.com/"], :root a[href^="https://adnetwrk.com/"], :root a[href^="https://refpaano.host/"], :root a[href^="https://meet-to-fuck.com/tds"], :root a[href^="http://data.linoleictanzaniatitanic.com/"], :root a[href^="https://adhealers.com/"], :root a[href^="https://ad.doubleclick.net/"], :root a[href^="http://zevera.com/afi.html"], :root a[href^="http://go.oclaserver.com/"], :root a[href^="https://ad.atdmt.com/"], :root .trc_rbox .syndicatedItem, :root a[href^="https://aaucwbe.com/"], :root a[href^="https://a.adtng.com/"], :root a[href^="https://8a1ccf65f2b1302.com/"], :root a[href^="http://xtgem.com/click?"], :root a[href^="https://ads.trafficpoizon.com/"], :root a[href^="http://rekoverr.com/"], :root a[href^="https://chaturbate.com/in/?track="], :root div[id^="cns_ads_"], :root a[data-obtrack^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://www1.clickdownloader.com/"], :root a[href^="http://www.zergnet.com/i/"], :root a[href^="http://hyperies.info/"], :root a[href^="http://www.torntv-downloader.com/"], :root a[href^="http://www.tirerack.com/affiliates/"], :root div[class^="AdBannerWrapper-"], :root a[href^="http://www.text-link-ads.com/"], :root a[href^="https://gghf.mobi/"], :root a[href^="http://www.terraclicks.com/"], :root a[href^="http://www.streamate.com/exports/"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], :root a[href^="http://www.sfippa.com/"], :root a[href^="http://www.xmediaserve.com/"], :root a[href^="http://www.sex.com/videos/?utm_"], :root a[href^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://www.sex.com/?utm_"], :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"], :root a[href^="http://www.roboform.com/php/land.php"], :root a[href^="http://secure.signup-page.com/"], :root a[href^="http://www.quick-torrent.com/download.html?aff"], :root a[href^="http://easydownload4you.com/"], :root a[href^="http://ffxitrack.com/"], :root a[href^="https://www.im88trk.com/"], :root a[href^="http://adexprt.me/"], :root a[href^="http://www.pinkvisualgames.com/?revid="], :root a[href^="https://trklvs.com/"], :root a[href^="http://www.paddypower.com/?AFF_ID="], :root a[href^="http://www.freefilesdownloader.com/"], :root a[href^="http://www.mysuperpharm.com/"], :root .trc_rbox_border_elm .syndicatedItem, :root a[href^="http://www.myfreepaysite.com/sfw_int.php?aid"], :root a[href^="http://www.myfreepaysite.com/sfw.php?aid"], :root div[id^="advads-"], :root a[href^="http://www.myfreecams.com/?co_id="][href*="&track="], :root .rhsvw[style="background-color:#fff;margin:0 0 14px;padding-bottom:1px;padding-top:1px;"], :root a[href^="http://www.moneyducks.com/"], :root a[href^="http://bcntrack.com/"], :root a[href^="http://www.securegfm.com/"], :root a[href^="http://www.liversely.net/"], :root a[href^="http://www.linkbucks.com/referral/"], :root a[href^="//88d7b6aa44fb8eb.com/"], :root a[href^="http://www.ireel.com/signup?ref"], :root a[href*="=Adtracker"], :root a[href^="http://www.incredimail.com/?id="], :root a[href^="http://www.idownloadplay.com/"], :root a[href^="http://www.hitcpm.com/"], :root a[href^="http://fusionads.net"], :root a[href^="http://www.hibids10.com/"], :root a[href^="http://www.gamebookers.com/cgi-bin/intro.cgi?"], :root div[id^="div_openx_ad_"], :root a[href^="http://www.friendlyquacks.com/"], :root a[href^="https://www.financeads.net/tc.php?"], :root a[href^="http://www.friendlyduck.com/AF_"], :root a[href*="emprestimo.eu"], :root a[href^="https://content.oneindia.com/www/delivery/"], :root a[href^="http://www.fpcTraffic2.com/blind/in.cgi?"], :root a[href^="http://www.fleshlight.com/"], :root a[href^="http://www.flashx.tv/downloadthis"], :root div[class^="SponsoredAds"], :root .trc_rbox_div a[target="_blank"][href^="http://tab"], :root a[href^="https://americafirstpolls.com/"], :root a[href^="http://clickserv.sitescout.com/"], :root a[href^="http://www.firstload.de/affiliate/"], :root a[href^="http://www.twinplan.com/AF_"], :root a[href^="http://www.fducks.com/"], :root a[href^="http://www.epicgameads.com/"], :root a[href^="http://www.easydownloadnow.com/"], :root a[href^="http://www.duckssolutions.com/"], :root a[href^="https://go.trkclick2.com/"], :root a[href^="http://www.duckcash.eu/"], :root a[href^="http://go.seomojo.com/tracking202/"], :root a[href^="http://www.downloadweb.org/"], :root .commercial-unit-mobile-top .jackpot-main-content-container > .UpgKEd + .nZZLFc > .vci, :root a[href^="http://www.installads.net/"], :root div[role="navigation"] + c-wiz > div > .kxhcC, :root a[href^="http://www.download-provider.org/"], :root a[href^="http://www.down1oads.com/"], :root a[href^="https://trafficmedia.center/"], :root a[href^="http://www.dealcent.com/register.php?affid="], :root .rscontainer > .ellip, :root a[href^="http://www.clkads.com/adServe/"], :root a[href^="http://www.clickansave.net/"], :root div[class^="adpubs-"], :root a[href*="deliver.trafficfabrik.com"], :root a[href^="http://www.cash-duck.com/"], :root a[href^="http://www.bitlord.me/share/"], :root div[class^="Directory__footerAds"], :root a[href^="http://www.bet365.com/"][href*="?affiliate="], :root a[href^="http://www.bet365.com/"][href*="&affiliate="], :root a[href^="http://www.badoink.com/go.php?"], :root #mbEnd[cellspacing="0"][cellpadding="0"], :root div[data-ad-underplayer], :root a[href^="http://www.richducks.com/"], :root a[href^="http://www.babylon.com/welcome/index?affID"], :root a[href^="http://www.sexgangsters.com/?pid="], :root a[href^="http://www.amazon.co.uk/exec/obidos/external-search?"], :root a[href^="https://ads-for-free.com/click.php?"], :root a[href^="http://www.socialsex.com/"], :root a[href^="https://www.camsoda.com/enter.php?id="], :root a[href^="http://go.ad2up.com/"], :root a[href^="https://badoinkvr.com/"], :root a[href*="/adServe/banners?"], :root a[href^="http://www.adxpansion.com"], :root .plistaList > .itemLinkPET, :root a[href^="http://www.adbrite.com/mb/commerce/purchase_form.php?"], :root a[href^="http://www.adultdvdempire.com/?partner_id="][href*="&utm_"], :root a[href^="http://www.ragazzeinvendita.com/?rcid="], :root a[href^="http://www.TwinPlan.com/AF_"], :root div[class^="adbanner_"], :root a[href^="http://www.brightwheel.info/"], :root a[href^="https://www.iclwy.xyz/"], :root a[href^="http://www.123-reg.co.uk/affiliate2.cgi"], :root div[itemtype="http://www.schema.org/WPAdBlock"], :root a[href^="http://wopertific.info/"], :root a[href^="http://bodelen.com/"], :root a[href^="http://wgpartner.com/"], :root div[class^="Ad__adContainer"], :root a[href^="http://web.adblade.com/"], :root div[class^="BlockAdvert-"], :root a[href^="https://go.onclasrv.com/"], :root a[href^="http://wct.link/"], :root a[href^="https://topoffers.com/"][href*="/?pid="], :root a[href^="http://vinfdv6b4j.com/"], :root a[href^="http://s9kkremkr0.com/"], :root a[href^="https://www.nutaku.net/signup/landing/"], :root a[href^="http://us.marketgid.com"], :root a[href^="http://ul.to/ref/"], :root a[href^="http://ucam.xxx/?utm_"], :root a[href^="https://adsrv4k.com/"], :root a[href^="http://trk.mdrtrck.com/"], :root a[href^="http://traffic.tc-clicks.com/"], :root div[class^="awpcp-random-ads"], :root a[href^="http://www.graboid.com/affiliates/"], :root a[href^="http://tracking.toroadvertising.com/"], :root a[href^="http://www.liutilities.com/"], :root a[href^="http://www.dl-provider.com/search/"], :root a[href^="http://tc.tradetracker.net/"] > img, :root a[href^="http://tracking.deltamediallc.com/"], :root a[href^="http://track.adform.net/"], :root a[href^="http://tour.affbuzzads.com/"], :root a[href^="https://iac.ampxdirect.com/"], :root a[href^="http://t.mdn2015x3.com/"], :root a[href^="http://galleries.securewebsiteaccess.com/"], :root a[href^="http://stateresolver.link/"], :root a[href^="http://sharesuper.info/"], :root a[href^="https://awecrptjmp.com/"], :root a[href^="http://server.cpmstar.com/click.aspx?poolid="], :root a[href^="http://serve.williamhill.com/promoRedirect?"], :root a[href^="http://www.downloadthesefiles.com/"], :root a[href^="http://secure.cbdpure.com/aff/"], :root a[href*="/cmd.php?ad="], :root a[href^="http://refpaano.host/"], :root #\5f _mom_ad_2, :root a[href^="http://ads.sprintrade.com/"], :root a[href^="http://record.commissionking.com/"], :root div[class*="-storyBodyAd-"], :root a[href^="https://easygamepromo.com/ef/custom_affiliate/"], :root [href^="https://get-download.club/"], :root a[href^="http://record.betsafe.com/"], :root a[href^="https://keep2share.cc/pr/"], :root a[href^="https://clixtrac.com/"], :root [onclick*="content.ad/"], :root a[href^="http://adlev.neodatagroup.com/"], :root a[href^="http://reallygoodlink.extremefreegames.com/"], :root a[href^="http://promos.bwin.com/"], :root a[href*=".irtyc.com/"], :root a[href^="http://z1.zedo.com/"], :root a[href^="http://pokershibes.com/index.php?ref="], :root a[href^="https://dltags.com/"], :root a[href^="http://onclickads.net/"], :root a[href^="http://mmo123.co/"], :root a[href^="https://www.oboom.com/ref/"], :root a[href^="http://media.paddypower.com/redirect.aspx?"], :root a[href^="http://allaptair.club/"], :root #rhs_block .xpdopen > ._OKe > div > .mod > ._yYf, :root .section-result[data-result-ad-type], :root a[href^="//ads.ad-center.com/"], :root a[href^="https://track.trkinator.com/"], :root a[href^="https://betway.com/"][href*="&a="], :root a[href^="https://affiliates.bet-at-home.com/processing/"], :root a[href^="http://dethao.com/"], :root a[href^="https://ads.ad4game.com/"], :root div[id^="ad-position-"], :root a[data-redirect^="this.href='http://paid.outbrain.com/network/redir?"], :root a[href^="http://liversely.com/"], :root a[href^="https://deliver.ptgncdn.com/"], :root a[href^="http://latestdownloads.net/download.php?"], :root a[href^="http://k2s.cc/code/"], :root #topstuff > #tads, :root a[href*=".bang.com/"][href*="&aff="], :root a[data-widget-outbrain-redirect^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://join3.bannedsextapes.com/track/"], :root a[href^="https://gamescarousel.com/"], :root a[href^="http://istri.it/?"], :root a[href^="//awejmp.com/"], :root a[href^="http://mob1ledev1ces.com/"], :root a[href^="http://www.fbooksluts.com/"], :root a[href^="http://www.cdjapan.co.jp/aff/click.cgi/"], :root a[href^="//api.ad-goi.com/"], :root a[href*="//ridingintractable.com/"], :root a[href^="http://intent.bingads.com/"], :root div[id^="crt-"][style], :root a[href^="http://igromir.info/"], :root a[href^="https://track.themadtrcker.com/"], :root a[href^="http://hyperlinksecure.com/go/"], :root a[href^="https://intrev.co/"], :root a[href^="http://https://www.get-express-vpn.com/offer/"], :root .ob_container .item-container-obpd, :root a[href^="http://websitedhoome.com/"], :root a[href^="http://www.adskeeper.co.uk/"], :root a[href^="https://clickadilla.com/"], :root a[href^="http://www.gfrevenge.com/landing/"], :root a[href^="http://45eijvhgj2.com/"], :root a[href^="http://hpn.houzz.com/"], :root a[href^="http://searchtabnew.com/"], :root a[href*="?adlivk="][href*="&refer="], :root a[href^="//look.djfiln.com/"], :root a[href^="http://greensmoke.com/"], :root a[href^="//5e1fcb75b6d662d.com/"], :root a[href^="http://googleads.g.doubleclick.net/pcs/click"], :root a[href^="https://bnsjb1ab1e.com/"], :root a[href^="http://mo8mwxi1.com/"], :root div[class^="ResponsiveAd-"], :root a[href^="http://install.securewebsiteaccess.com/"], :root a[href^="http://www.revenuehits.com/"], :root a[href^="https://mcdlks.com/"], :root a[href^="https://bs.serving-sys.com"], :root .__y_elastic .__y_item, :root a[href^="http://go.mobisla.com/"], :root a[href^="//srv.buysellads.com/"], :root a[href^="http://g1.v.fwmrm.net/ad/"], :root .widget-pane-section-result[data-result-ad-type], :root a[href^="http://imads.integral-marketing.com/"], :root a[href^="http://freesoftwarelive.com/"], :root a[href^="http://adtrackone.eu/"], :root a[href^="http://finaljuyu.com/"], :root a[href^="http://fileloadr.com/"], :root a[href^="http://extra.bet365.com/"][href*="?affiliate="], :root a[href^="http://ethfw0370q.com/"], :root [id^="bunyad_ads_"], :root a[href^="http://elitefuckbook.com/"], :root a[href^="http://eclkmpsa.com/"], :root a[href*="//3wr110.xyz/"], :root a[href^="http://earandmarketing.com/"], :root a[href^="https://www.mypornstarcams.com/landing/click/"], :root a[href*="get-express-vpn.xyz"], :root a[href*=".intab.fun/"], :root a[href^="http://secure.signup-way.com/"], :root [href^="https://maskip.co/"], :root a[href^="http://getlinksinaseconds.com/"], :root a[href*=".mfroute.com/"], :root #content > #center > .dose > .dosesingle, :root a[href^="http://campaign.bharatmatrimony.com/track/"], :root a[href^="http://d2.zedo.com/"], :root a[href^="http://keep2share.cc/pr/"], :root a[href^="http://cp.cbbp1.com"], :root a[href^="http://contractallsticker.net/"], :root a[href^="http://codec.codecm.com/"], :root a[href^="http://pwrads.net/"], :root a[href^="//oardilin.com/"], :root a[href^="http://refer.webhostingbuzz.com/"], :root a[href^="https://paid.outbrain.com/network/redir?"], :root a[href^="http://www.downloadplayer1.com/"], :root a[href^="http://clicks.binarypromos.com/"], :root iframe[name^="google_ads_iframe"], :root div[class^="largeRectangleAd_"], :root a[href^="https://dediseedbox.com/clients/aff.php?"], :root a[href^="http://www.wantstraffic.com/"], :root a[href^="http://databass.info/"], :root a[href^="http://www.urmediazone.com/signup"], :root a[href^="http://click.plista.com/pets"], :root a[href^="https://a.bestcontentpc.top/"], :root a[href^="http://chaturbate.com/affiliates/"], :root a[href^="http://www.firstload.com/affiliate/"], :root a[href^="http://www.friendlyadvertisements.com/"], :root a[href^="//00ae8b5a9c1d597.com/"], :root a[href^="http://cdn3.adbrau.com/"], :root a[href^="http://amzn.to/"] > img[src^="data"], :root a[href^="http://bs.serving-sys.com/"], :root a[href^="http://cpaway.afftrack.com/"], :root a[href^="http://cdn.adsrvmedia.net/"], :root [lazy-ad="top_banner"], :root a[href^="http://360ads.go2cloud.org/"], :root a[href^="http://dftrck.com/"], :root a[href^="http://casino-x.com/?partner"], :root div[data-flt-ve="sponsored_search_ads"], :root a[href^="http://record.sportsbetaffiliates.com.au/"], :root a[href^="http://campeeks.com/"][href*="&utm_"], :root #flowplayer > div[style="position: absolute; width: 300px; height: 275px; left: 222.5px; top: 85px; z-index: 999;"], :root a[href^="http://download-performance.com/"], :root a[href^="http://www.on2url.com/app/adtrack.asp"], :root #\5f _nq__hh[style="display:block!important"], :root a[href^="http://guideways.info/"], :root a[href^="http://campaign.bharatmatrimony.com/cbstrack/"], :root a[href^="http://ads.expekt.com/affiliates/"], :root a[href^="http://callville.xyz/"], :root a[href^="http://xads.zedo.com/"], :root a[href^="http://www.affiliates1128.com/processing/"], :root a[href^="http://c.jumia.io/"], :root a[href^="https://bullads.net/get/"], :root a[href^="http://yads.zedo.com/"], :root a[href^="http://down1oads.com/"], :root a[href^="http://buysellads.com/"], :root a[href^="https://uncensored.game/"], :root td[valign="top"] > .mainmenu[style="padding:10px 0 0 0 !important;"], :root a[href^="http://feedads.g.doubleclick.net/"], :root a[href^="http://betahit.click/"], :root a[href^="https://torguard.net/aff.php"] > img, :root a[href^="http://bestorican.com/"], :root a[href^="http://bcp.crwdcntrl.net/"], :root a[href^="http://bc.vc/?r="], :root a[href^="http://banners.victor.com/processing/"], :root a[href^="http://adf.ly/?id="], :root a[href^="https://uncensored3d.com/"], :root div[data-subscript="Advertising"], :root a[href^="http://t.mdn2015x2.com/"], :root div[class$="dealnews"] > .dealnews, :root a[href^="http://click.payserve.com/"], :root a[href^="http://s5prou7ulr.com/"], :root a[href^="http://azmobilestore.co/"], :root a[href^="http://affiliate.glbtracker.com/"], :root a[href^="https://transfer.xe.com/signup/track/redirect?"], :root a[href^="http://anonymous-net.com/"], :root a[href^="https://www.dsct1.com/"], :root a[data-oburl^="https://paid.outbrain.com/network/redir?"], :root .icons-rss-feed + .icons-rss-feed div[class$="_item"], :root a[href^="http://aflrm.com/"], :root a[href^="http://affiliates.pinnaclesports.com/processing/"], :root a[href^="http://partner.sbaffiliates.com/"], :root a[href^="http://affiliate.coral.co.uk/processing/"], :root a[href^="http://aff.ironsocket.com/"], :root a[href^="http://adsrv.keycaptcha.com"], :root a[href^="https://zononi.com/"], :root a[href^="http://adserving.unibet.com/"], :root a[href^="https://secure.adnxs.com/clktrb?"], :root a[href^="http://adserver.adtechus.com/"], :root a[href^="http://adserver.adreactor.com/"], :root a[href^="http://www.yourfuckbook.com/?"], :root a[href^="//go.onclasrv.com/"], :root .GHOFUQ5BG2 > .GHOFUQ5BF2 > .GHOFUQ5BG5, :root a[href^="https://www.mrskin.com/tour"], :root a[href^="http://adserver.adtech.de/"], :root a[href^="http://cwcams.com/landing/click/"], :root a[href^="http://ads.betfair.com/redirect.aspx?"], :root a[href^="http://ads.affbuzzads.com/"], :root a[href^="//mob1ledev1ces.com/"], :root a[href^="http://online.ladbrokes.com/promoRedirect?"], :root a[href^="http://go.trafficshop.com/"], :root a[href^="http://ads.ad-center.com/"], :root a[href^="https://horny-pussies.com/tds"], :root a[href^="http://adfarm.mediaplex.com/"], :root a[href^="http://ad.doubleclick.net/"], :root a[href^="https://k2s.cc/pr/"], :root a[href^="http://ad.au.doubleclick.net/"], :root a[href^="http://a63t9o1azf.com/"], :root a[href^="http://srvpub.com/"], :root a[href^="http://a.adquantix.com/"], :root a[href^="http://NowDownloadAll.com"], :root a[href^="http://adtrack123.pl/"], :root a[href^="http://9amq5z4y1y.com/"], :root a[href^="http://4c7og3qcob.com/"], :root a[href^="//go.vedohd.org/"], :root a[href^="http://www.ducksnetwork.com/"], :root a[href^="http://3wr110.net/"], :root a[href^="http://1phads.com/"], :root a[href^="//zenhppyad.com/"], :root #mn div[style="position:relative"] > #center_col > div > ._dPg, :root a[href^="http://www.myvpn.pro/"], :root a[href^="//www.pd-news.com/"], :root a[href^="//www.mgid.com/"], :root a[href^="http://lp.ncdownloader.com/"], :root a[href^="//pubads.g.doubleclick.net/"], :root div[id^="ad-gpt-"], :root a[href^="http://pan.adraccoon.com?"], :root a[href^="https://ilovemyfreedoms.com/"][href*="?affiliate_id="], :root a[href^="//healthaffiliate.center/"], :root .l-container > #fishtank, :root div[data-crl="true"][data-id^="CarouselPLA-"], :root .plistaList > .plista_widget_underArticle_item[data-type="pet"], :root #center_col > #taw > #tvcap > .commercial-unit-desktop-top, :root a[href^="http://www.afgr2.com/"], :root #mn div[style="position:relative"] > #center_col > ._Ak, :root a[href^="https://www.oboom.com/ad/"], :root a[href^="//4f6b2af479d337cf.com/"], :root a[href^="https://www.arthrozene.com/"][href*="?tid="], :root a[href^="https://awejmp.com/"], :root a[href^=" http://www.sex.com/"][href*="&utm_"], :root a[href^=" http://n47adshostnet.com/"], :root a[href^=" http://ads.ad-center.com/"], :root a[href^="https://fileboom.me/pr/"], :root a[href^="http://marketgid.com"], :root .GPMV2XEDA2 > .GPMV2XEDP1 > .GPMV2XEDJBB, :root a[href*="onclkds."], :root .trc_rbox_div .syndicatedItem, :root #ads > .dose > .dosesingle, :root .commercial-unit-mobile-top .jackpot-main-content-container > .UpgKEd + .nZZLFc > div > .vci, :root a[href*="delivery.trafficfabrik.com"], :root a[href^="http://connectlinking6.com/"], :root a[href^="http://cdn3.adexprts.com/"], :root a[href^="https://spygasm.com/track?"], :root a[href*="=exoclick"], :root div[class^="backfill-taboola-home-slot-"], :root a[href*="=adscript"], :root #mn #center_col > div > h2.spon:first-child, :root a[href*="//bongacams5.com/track?"], :root FBS-AD, :root a[href*="5iclx7wa4q.com"], :root a[href^="https://www.adxtro.com/"], :root #center_col > #resultStats + #tads + #res + #tads, :root a[href*="//bongacams2.com/track?"], :root a[href^="http://www.drowle.com/"], :root a[href*=".udncoeln.com/"], :root a[href*=".qertewrt.com/"], :root a[target="_blank"][href^="http://api.taboola.com/"], :root a[href*=".smartadserver.com"], :root a[href*="//bongacams.com/track?"], :root a[data-oburl^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://refpa.top/"], :root a[href*=".revimedia.com/"], :root .__ywvr .__y_item, :root a[href^="https://farm.plista.com/pets"], :root a[href*=".red90121.com/"], :root [href^="http://advertisesimple.info/"], :root a[href^="https://www.friendlyduck.com/AF_"], :root #center_col > #resultStats + div + #res + #tads, :root a[href^="//40ceexln7929.com/"], :root a[href^="https://playuhd.host/"], :root .mw > #rcnt > #center_col > #taw > #tvcap > .c, :root a[href*=".purple6401.com/"], :root a[href^="http://www.greenmangaming.com/?tap_a="], :root a[href*=".opskln.com/"], :root a[href^="http://adrunnr.com/"], :root div[id^="div_ad_stack_"], :root a[href*=".ichlnk.com/"], :root a[href^="http://secure.hostgator.com/~affiliat/"], :root [onclick^="window.open('http://adultfriendfinder.com/search/"], :root .mod > .gws-local-promotions__border, :root a[href^="https://deliver.tf2www.com/"], :root a[href^="http://spygasm.com/track?"], :root .ob_dual_right > .ob_ads_header ~ .odb_div, :root a[href*=".adk2x.com/"], :root a[href^="http://data.committeemenencyclopedicrepertory.info/"], :root a[href*=".allsports4you.club"], :root #MAIN.ShowTopic > .ad, :root a[href^="https://porngames.adult/?SID="], :root a[href^="http://findersocket.com/"], :root ad-slot--header-banner, :root a[href^="https://m.do.co/c/"] > img, :root #tads + div + .c, :root a[href^="//jsmptjmp.com/"], :root #ssmiwdiv[jsdisplay], :root a[href*=".adform.net/"], :root a[href^="http://duckcash.eu/"], :root a[href^="http://www.mobileandinternetadvertising.com/"], :root .GB3L-QEDGY .GB3L-QEDF- > .GB3L-QEDE-, :root a[data-url^="http://paid.outbrain.com/network/redir?"] + .author, :root a[href^="http://liversely.net/"], :root .ra[width="30%"][align="right"] + table[width="70%"][cellpadding="0"], :root a[href^="http://www.coiwqe.site/"], :root iframe[id^="google_ads_frame"], :root a[href^="http://www.bluehost.com/track/"] > img, :root a[data-url^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://play4k.co/"], :root a[data-redirect^="https://paid.outbrain.com/network/redir?"], :root a[href^="http://n.admagnet.net/"], :root a[href^="http://bestchickshere.com/"], :root a[href^="http://www.streamtunerhd.com/signup?"], :root a[href^="http://www.getyourguide.com/?partner_id="], :root [onclick^="window.open('https://www.brazzersnetwork.com/landing/"], :root a[href*=".adsrv.eacdn.com/"] > img, :root a[href^="http://mgid.com/"], :root a[href*="a2g-secure.com"], :root #resultspanel > #topads, :root a[href^="http://espn.zlbu.net/"], :root a[href^="https://vod09197d7.club/"], :root a[href^="http://k2s.cc/pr/"], :root a[href^="http://9nl.es/"], :root #assetsListings[style="display: block;"], :root [onclick^="window.open('window.open('//delivery.trafficfabrik.com/"], :root [id*="MarketGid"], :root a[href^="https://servedbyadbutler.com/"], :root a[href^="https://mob1ledev1ces.com/"], :root [id^="adframe_wrap_"], :root div[data-mediatype="advertising"], :root a[href^="http://c.ketads.com/"], :root a[href^="http://6kup12tgxx.com/"], :root a[target="_blank"][onmousedown="this.href^='http://paid.outbrain.com/network/redir?"], :root a[href*=".fwd28.com/"], :root [lazy-ad="leftbottom_banner"], :root p[id^="div-gpt-ad-"], :root a[href^="http://fsoft4down.com/"], :root a[href*="ad2upapp.com/"], :root a[href^="http://see-work.info/"], :root a[href*="/adrotate-out.php?"], :root #atvcap + #tvcap > .mnr-c > .commercial-unit-mobile-top, :root .inlineNewsletterSubscription + .inlineNewsletterSubscription div[class$="_item"], :root a[href*=".orange2258.com/"], :root #taw > .med + div > #tvcap > .mnr-c:not(.qs-ic) > .commercial-unit-mobile-top, :root .plista_widget_belowArticleRelaunch_item[data-type="pet"], :root a[href^="http://www.fonts.com/BannerScript/"], :root [href^="http://www.xiloy.site/"], :root a[href^="https://www.passeura.com/"], :root a[href^="http://www.pinkvisualpad.com/?revid="], :root a[href^="https://www.brazzersnetwork.com/landing/"], :root #cnt #center_col > #taw > #tvcap > .c._oc._Lp, :root [href*="//xml.revrtb.com/"], :root a[href^="http://get.slickvpn.com/"], :root [data-ad-module], :root a[href^="http://hd-plugins.com/download/"], :root a[href^="//voyeurhit.com/cs/"], :root a[href^="http://www.afgr3.com/"], :root [ad-id^="googlead"], :root a[href^="http://b.bestcompleteusa.info/"], :root .trc_rbox_div .syndicatedItemUB, :root .ra[align="left"][width="30%"], :root a[href^="https://trackjs.com/?utm_source"], :root AFS-AD, :root a[href^="http://adclick.g.doubleclick.net/"], :root #main-content > [style="padding:10px 0 0 0 !important;"], :root #center_col > #resultStats + div[style="border:1px solid #dedede;margin-bottom:11px;padding:5px 7px 5px 6px"], :root div[class^="lifeOnwerAd"], :root a[href$="/vghd.shtml"], :root a[href^="https://redirect.ero-advertising.com/"], :root #center_col > #main > .dfrd > .mnr-c > .c._oc._zs, :root a[href^="http://deloplen.com/afu.php?zoneid="], :root a[href^="//db52cc91beabf7e8.com/"], :root [id*="ScriptRoot"], :root a[href*=".clksite.com/"], :root a[href^="http://www.webtrackerplus.com/"], :root .GJJKPX2N1 > .GJJKPX2M1 > .GJJKPX2P4, :root #center_col > #taw > #tvcap > .cu-container > .commercial-unit-desktop-top, :root a[href^="http://centertrust.xyz/"], :root .vi-lb-placeholder[title="ADVERTISEMENT"], :root a[href^="http://goldmoney.com/?gmrefcode="], :root a[href^="http://papi.mynativeplatform.com:80/pub2/"], :root LEADERBOARD-AD, :root #mn #center_col > div > h2.spon:first-child + ol:last-child, :root a[href^="http://servicegetbook.net/"], :root #rhs_block > #mbEnd, :root a[href^="http://cinema.friendscout24.de?"], :root [lazy-ad="lefttop_banner"], :root a[href^="http://www.mrskin.com/tour"], :root .jobs-information-call-to-action + .jobs-information-call-to-action div[class$="_item"], :root a[href^="https://www.incredimail.com/?id"], :root a[href^="http://api.content.ad/"], :root a[href^="http://adtransfer.net/"], :root a[href*=".clkcln.com/"], :root .commercial-unit-desktop-rhs > .iKidV > .Ee92ae + .P2mpm + .hp3sk, :root a[href^="http://www.uniblue.com/cm/"], :root a[href^="http://landingpagegenius.com/"], :root a[data-redirect^="http://click.plista.com/pets"], :root #rhs_block > script + .c._oc._Ve.rhsvw, :root #\5f _mom_ad_12, :root .__zinit .__y_item, :root .ch[onclick="ga(this,event)"], :root .__ywl .__y_item, :root a[href^="http://track.trkvluum.com/"], :root a[href^="http://linksnappy.com/?ref="], :root [src^="/Redirect.a2b?"], :root #center_col > #resultStats + #tads, :root .__yinit .__y_item, :root #center_col > div[style="font-size:14px;margin-right:0;min-height:5px"] > div[style="font-size:14px;margin:0 4px;padding:1px 5px;background:#fff8e7"], :root a[data-redirect^="http://paid.outbrain.com/network/redir?"], :root a[href^="https://secure.cbdpure.com/aff/"], :root AMP-AD, :root iframe[src*="mellowads.com"], :root .__y_inner > .__y_item, :root #cnt #center_col > #res > #topstuff > .ts, :root a[href^="https://landing.brazzersnetwork.com/"], :root .rc-cta[data-target], :root a[href*="//promo-bc.com/track?"], :root a[href^="http://www.firstclass-download.com/"], :root a[href*=".trust.zone"], :root .GFYY1SVD2 > .GFYY1SVC2 > .GFYY1SVF5, :root div[class^="AdEmbeded__AddWrapper"], :root a[href^="http://affiliates.score-affiliates.com/"], :root #rhswrapper > #rhssection[border="0"][bgcolor="#ffffff"], :root .Mpopup + #Mad > #MadZone, :root #center_col > #\5f Emc, :root #rhs_block .mod > .luhb-div > div[data-async-type="updateHotelBookingModule"], :root div[class^="advertisement-desktop"], :root a[href^="http://ads2.williamhill.com/redirect.aspx?"], :root a[href^="https://www.spyoff.com/"], :root AD-TRIPLE-BOX, :root a[href^="http://www.menaon.com/installs/"], :root a[href^="http://taboola-"][href*="/redirect.php?app.type="], :root .mw > #rcnt > #center_col > #taw > .c, :root #rhs_block > .ts[cellspacing="0"][cellpadding="0"][style="padding:0"], :root a[href^="http://clickandjoinyourgirl.com/"], :root a[href^="https://ad13.adfarm1.adition.com/"], :root #header + #content > #left > #rlblock_left, :root a[href^="http://www.seekbang.com/cs/"], :root a[href^="http://syndication.exoclick.com/"], :root a[href^="http://bluehost.com/track/"], :root a[href^="https://squren.com/rotator/?atomid="], :root .nrelate .nr_partner, :root a[href^="https://adclick.g.doubleclick.net/"], :root a[href^="//medleyads.com/spot/"], :root a[href*="mfroute.com/"], :root a[href^="//z6naousb.com/"], :root a[href^="http://t.mdn2015x1.com/"], :root div[id^="ad_bigbox_"], :root #content > #right > .dose > .dosesingle, :root #rhs_block > ol > .rhsvw > .kp-blk > .xpdopen > ._OKe > ol > ._DJe > .luhb-div, :root a[href^="http://tezfiles.com/pr/"], :root a[href^="http://t.wowtrk.com/"], :root div[id^="adspot-"], :root #\5f _admvnlb_modal_container, :root #center_col > #taw > #tvcap > .rscontainer, :root div[id^="drudge-column-ads-"], :root a[href^="http://tour.mrskin.com/"], :root #main_col > #center_col div[style="font-size:14px;margin:0 4px;padding:1px 5px;background:#fff7ed"], :root a[href^="https://track.totalav.com/"], :root a[href^="https://is.ltroute.com/"], :root a[href^="http://www.incredimail.com/?id"], :root a[href^="http://ad-apac.doubleclick.net/"], :root a[data-nvp*="'trafficUrl':'https://paid.outbrain.com/network/redir?"], :root a[href^="http://webtrackerplus.com/"], :root div[itemtype="http://schema.org/WPAdBlock"], :root a[href^="https://www.nudeidols.com/cams/"], :root #center_col > #res > #topstuff + #search > div > #ires > #rso > #flun, :root a[href^="http://www.sex.com/pics/?utm_"], :root a[href^="http://vo2.qrlsx.com/"], :root a[href^="http://engine.newsmaxfeednetwork.com/"], :root a[href^="http://ad.yieldmanager.com/"], :root a[href^="http://www.plus500.com/?id="], :root #flowplayer > div[style="z-index: 208; position: absolute; width: 300px; height: 275px; left: 222.5px; top: 85px;"], :root a[href^="http://n217adserv.com/"], :root a[href^="//4c7og3qcob.com/"] { display: none !important; }</style><link href="chrome-extension://cjdnfmjmdligcpfcekfmenlhiopehjkd/web_resources/modal/modal.css" rel="stylesheet" id="__tmpStyle"><style id="motion-extension-style">@media print{.no-print,.no-print *{display:none!important}}#motion-intervention-iframe{width:100%!important;height:100%!important;min-width:auto!important;min-height:auto!important;position:fixed;bottom:0;right:0;left:0;top:0;align-items:center;justify-items:center;z-index:2147483646}.motion-no-overflow{overflow:hidden!important}.motion-iframe{z-index:2147483648;border:none;left:inherit;display:flex!important;background-color:transparent}.motion-iframe-hidden{display:none!important}.motion-extension-div{padding:0;margin:0;max-width:none!important;min-width:0!important;width:auto;max-height:none!important;min-height:0!important;height:auto;border:none;box-shadow:none;background-color:transparent;visibility:visible!important}#motion-sidebar-iframe-container{overflow:visible;position:fixed;z-index:2147483648}.motion-sidebar-distracting,.motion-sidebar-distracting-note,.motion-sidebar-general,.motion-sidebar-general-note,.motion-sidebar-pomodoro,.motion-sidebar-pomodoro-note{height:54px!important;min-height:auto!important;top:170px;right:0}.motion-sidebar-general{width:54px!important}iframe.motion-sidebar-general{width:54px!important;min-width:auto!important;box-shadow:0 1px 5px 0 #696969}.motion-sidebar-general-note{width:278px!important}iframe.motion-sidebar-general-note{width:278px!important;min-width:auto!important;box-shadow:0 1px 5px 0 #696969}.motion-sidebar-dragging>.motion-drag-icon-container,.motion-sidebar:hover>.motion-drag-icon-container{display:flex}.motion-sidebar{display:flex;flex-direction:row;align-items:center}.motion-sidebar-disabling{right:0!important}.motion-sidebar-dragging{right:0!important;transform:none!important}iframe.motion-sidebar-distracting,iframe.motion-sidebar-pomodoro{width:160px!important;min-width:auto!important;box-shadow:0 1px 5px 0 #696969}.motion-sidebar-pomodoro{width:160px!important}iframe.motion-sidebar-distracting-note,iframe.motion-sidebar-pomodoro-note{width:327px!important;min-width:auto!important;box-shadow:0 1px 5px 0 #696969}.motion-sidebar-pomodoro-note{width:327px!important}#motion-sidebar-iframe{overflow:auto;top:0;right:0;z-index:0;border-radius:.3rem 0 0 .3rem}.motion-reminder{width:350px!important;height:60px!important;min-width:auto!important;min-height:auto!important;box-shadow:0 1px 5px 0 #696969}#motion-reminder-iframe{overflow:auto;right:0;z-index:0}#motion-reminder-iframe-container{overflow:hidden;position:fixed;top:20px;right:-350px;transition:1s;z-index:2147483648}.motion-right-slide{transition:1s;right:0!important}#motion-account-iframe{width:100%!important;height:100%!important;min-width:auto!important;min-height:auto!important;position:fixed;bottom:0;right:0;left:0;top:0;align-items:center;justify-items:center}.motion-no-pointer-events{pointer-events:none!important}.ant-select-dropdown{z-index:100000!important}#motion-report-iframe,#motion-share-iframe{width:100%!important;height:100%!important;min-width:auto!important;min-height:auto!important;position:fixed;bottom:0;right:0;left:0;top:0;align-items:center;justify-items:center}#motion-disable-popup-iframe-container{overflow:visible;position:fixed;z-index:2147483648;right:230px}#motion-dropdown-iframe{right:0!important;width:180px!important;border-radius:8px 0 0 8px}#motion-dropdown-iframe,#motion-dropdown-inner-iframe{overflow:visible;position:fixed;z-index:2147483648;top:0;height:0;min-width:auto!important;min-height:auto!important;box-shadow:0 1px 5px 0 #696969}#motion-dropdown-inner-iframe{right:182px!important;width:200px!important;border-radius:8px 8px 8px 8px}#motion-browser-icon-modal-iframe,#motion-consolidate-tab-modal-iframe,#motion-edit-schedule-modal-iframe,#motion-edit-sites-modal-iframe,#motion-email-signatures-iframe,#motion-hide-widget-modal-iframe,#motion-intervention-snooze-modal-iframe,#motion-recent-docs-modal-iframe,#motion-report-modal-iframe,#motion-search-tab-modal-iframe,#motion-shortcut-modal-iframe,#motion-subtabs-toggle-modal-iframe,#motion-upgrade-iframe,#motion-view-workspace-modal-iframe{width:100%!important;height:100%!important;min-width:auto!important;min-height:auto!important;position:fixed;bottom:0;right:0;left:0;top:0;align-items:center;justify-items:center}#motion-browser-icon-modal-iframe{z-index:1000}#motion-pomodoro-modal-iframe{position:fixed;width:210px!important;min-width:auto!important}#motion-command-iframe,#motion-quicknotes-iframe,#motion-snippet-iframe,#motion-subtab-entry-iframe{width:100%!important;height:100%!important;min-width:auto!important;min-height:auto!important;position:fixed;bottom:0;right:0;left:0;top:0;align-items:center;justify-items:center}#motion-confirmation-iframe{bottom:20px;left:20px;width:200px!important;height:54px!important}#motion-confirmation-iframe,#motion-suggestion-iframe{position:fixed;min-width:auto!important;min-height:auto!important}#motion-suggestion-iframe{width:250px!important;height:50px!important;right:0}#motion-new-features-popup-iframe-container{overflow:visible;position:fixed;z-index:2147483648;top:-300px;right:15px}.motion-new-features-slide{transition:1s;top:15px!important}#motion-new-features-popup-iframe{overflow:auto;top:0;width:370px!important;height:370px!important;min-width:auto!important;min-height:auto!important;box-shadow:0 2px 7px 0 rgba(76,85,101,.3);border-radius:8px}#motion-sidebar-badge-iframe-container{overflow:visible;position:fixed;z-index:2147483648;right:54px}#motion-sidebar-badge-iframe{overflow:auto;top:-30px;width:20px!important;height:20px!important;min-width:auto!important;min-height:auto!important;pointer-events:none}#motion-sidebar-pomodoro-badge-iframe{overflow:auto;position:fixed;right:39px;width:30px!important;height:30px!important;min-width:auto!important;min-height:auto!important}#motion-email-iframe-container{overflow:visible;position:fixed;z-index:2147483648;top:calc(100% - 450px);left:calc(100% - 804px)}#motion-email-iframe{resize:both;overflow:auto;top:0;width:544px;height:450px;min-width:270px!important;min-height:270px!important;box-shadow:0 6px 15px 0 rgba(0,0,0,.1),0 16px 2rem rgba(0,0,0,.05),0 0 .5px rgba(0,0,0,.1);border-radius:6px}#motion-calendar-iframe-container{overflow:visible;position:fixed;z-index:2147483648;bottom:0;right:0}#motion-calendar-iframe{overflow:auto;top:0;width:350px!important;height:100vh!important;min-width:270px!important;min-height:270px!important;box-shadow:0 0 10px 0 #000}#motion-subtabs-control-iframe-container{overflow:visible;position:fixed;z-index:2147483646;right:0;display:flex;flex-direction:column;align-items:flex-end}#motion-subtabs-control-iframe{width:180px!important;height:0}#motion-subtabs-control-iframe,#motion-subtabs-control-iframe-minimized{overflow:auto;top:0;min-width:auto!important;min-height:auto!important;box-shadow:0 1px 5px 0 #696969;border-radius:8px 0 0 8px}#motion-subtabs-control-iframe-minimized{width:120px!important;height:45px!important}#motion-subtabs-add-expanded-setting-iframe{overflow:auto;bottom:0;background-color:transparent;width:270px!important;height:150px!important;min-width:auto!important;min-height:auto!important;margin:6px 6px 0 0}#motion-subtabs-add-expanded-iframe{width:180px!important}#motion-subtabs-add-expanded-iframe,#motion-subtabs-add-iframe{overflow:auto;bottom:0;background-color:transparent;height:52px!important;min-width:auto!important;min-height:auto!important;margin:6px 6px 0 0}#motion-subtabs-add-iframe{width:55px!important}#motion-subtab-iframe{width:250px!important;height:50px}#motion-generic-notification-iframe,#motion-subtab-iframe{position:fixed;min-width:auto!important;min-height:auto!important;right:0}#motion-generic-notification-iframe{width:100%!important;height:100%!important;bottom:0;left:0;top:0;align-items:center;justify-items:center;pointer-events:none}.motion-calendar-reminder{width:328px!important;height:40px!important;min-width:auto!important;min-height:auto!important;box-shadow:0 1px 5px 0 #696969}#motion-calendar-reminder-iframe{overflow:auto;right:0;z-index:0;border-radius:4px}#motion-calendar-reminder-iframe-container{overflow:hidden;position:fixed;top:20px;right:-328px;transition:1s;z-index:2147483648}.motion-calendar-reminder-transition{right:25px!important;transition:.5s}</style></head>
+  <!-- Mobile Styles Enabled -->
+  <body id="collection-5bd9b4b88a922daf4af8f62c" class="site-spacing-small site-outer-padding-large site-alignment-center tweak-site-ajax-loading-enable ancillary-header-full-width tweak-header-cart-style-text show-site-footer ancillary-header-branding-position-center ancillary-header-tagline-position-hide ancillary-header-primary-nav-position-left ancillary-header-secondary-nav-position-right ancillary-header-cart-position-right ancillary-header-left-layout-horizontal ancillary-header-center-layout-stacked ancillary-header-right-layout-horizontal ancillary-header-account-position-left tweak-header-account-style-text tweak-mobile-bar-account-style-text show-desktop-folder-indicator scale-heading-1-font-size scale-heading-2-font-size scale-heading-3-font-size scale-quote-font-size quote-alignment-center show-quotation-marks show-album-banner show-blog-banner show-events-banner show-gallery-banner show-products-banner show-album-title show-blog-title show-events-title show-gallery-title show-index-description show-page-title show-products-title show-products-description show-collection-page-footer banner-height-medium banner-image-alignment-center banner-image-crop banner-text-alignment-center page-banner-text-width-medium scale-banner-description-font-size banner-text-background-indent-custom scale-page-title-font-size intro-text-width-medium intro-text-height-large scale-index-title-font-size scale-index-description-font-size index-intro-text-width-large index-intro-text-height-medium index-item-width-full index-item-height-medium index-item-spacing-custom index-item-alternate-widths full-bleed-index index-item-image-alignment-center auto-color-index-item-bg index-item-title-display-on-hover index-item-title-alignment-center scale-index-item-title-font-size show-index-item-categories project-image-alignment-center project-image-spacing-medium project-banner-spacing-medium show-project-captions project-image-portrait-caption-style-offset project-image-landscape-caption-style-offset project-left-image-portrait-caption-style-standard project-left-image-landscape-caption-style-standard project-right-image-portrait-caption-style-standard project-right-image-landscape-caption-style-standard full-bleed-project tweak-project-slide-transition image-caption-title-alignment-left scale-image-caption-title-font image-caption-body-alignment-left show-index-navigation index-link-spacing-large scale-index-link-font-size index-link-style-list-inline index-link-delimiter-type-none show-next-label-only tweak-page-transition-animation tweak-mobile-bar-position-top-fixed tweak-mobile-bar-branding-position-center tweak-mobile-bar-menu-icon-position-right tweak-mobile-bar-site-tagline-position-hide tweak-mobile-bar-cart-style-text tweak-icon-weight-medium tweak-blog-meta-primary-date tweak-blog-meta-secondary-category tweak-blog-list-style-grid tweak-blog-list-separator-show tweak-blog-list-alignment-left tweak-blog-list-item-image-show tweak-blog-list-item-image-aspect-ratio-grid-32-standard tweak-blog-list-item-image-aspect-ratio-stacked-11-square tweak-blog-list-item-title-show tweak-blog-list-item-excerpt-show tweak-blog-list-item-body-show tweak-blog-list-item-readmore-inline tweak-blog-list-item-meta-position-below-title tweak-blog-list-pagination-link-label-show tweak-blog-list-pagination-link-icon-show tweak-blog-list-pagination-link-icon-weight-light tweak-blog-item-alignment-center tweak-blog-item-meta-position-below-title tweak-blog-item-share-position-above-content tweak-blog-item-pagination-link-icon-show tweak-blog-item-pagination-link-title-show tweak-blog-item-pagination-link-meta-date tweak-blog-item-pagination-link-icon-weight-hairline event-thumbnails event-thumbnail-size-32-standard event-date-label event-date-label-time event-list-show-cats event-list-date event-list-time event-list-address event-icalgcal-links event-excerpts event-item-back-link gallery-design-grid aspect-ratio-auto lightbox-style-light gallery-navigation-bullets gallery-info-overlay-show-on-hover gallery-aspect-ratio-32-standard gallery-arrow-style-no-background gallery-transitions-fade gallery-show-arrows gallery-auto-crop tweak-product-list-image-aspect-ratio-11-square tweak-product-list-item-hover-behavior-show-alternate-image tweak-product-list-meta-position-under tweak-product-list-mobile-meta-position-under tweak-product-list-meta-alignment-under-left tweak-product-list-meta-alignment-overlay-center-center tweak-product-list-show-title tweak-product-list-show-price tweak-product-list-filter-display-hide tweak-product-list-filter-alignment-left tweak-product-item-nav-show-breadcrumb-and-pagination tweak-product-item-nav-pagination-style-previousnext tweak-product-item-nav-breadcrumb-alignment-left tweak-product-item-nav-pagination-alignment-split tweak-product-item-gallery-position-left tweak-product-item-gallery-design-slideshow tweak-product-item-gallery-aspect-ratio-11-square tweak-product-item-gallery-thumbnail-alignment-center tweak-product-item-details-alignment-center tweak-product-item-details-show-title tweak-product-item-details-show-price tweak-product-item-details-show-excerpt tweak-product-item-details-excerpt-position-below-add-to-cart-button tweak-product-item-details-show-share-buttons tweak-product-item-details-show-variants tweak-product-item-details-show-quantity tweak-product-item-details-options-style-square tweak-product-item-details-show-add-to-cart-button tweak-product-item-details-add-to-cart-button-style-outline tweak-product-item-details-add-to-cart-button-shape-pill tweak-product-item-details-add-to-cart-button-padding-medium tweak-product-item-image-zoom-enabled tweak-product-item-image-zoom-behavior-click tweak-product-item-lightbox-enabled tweak-related-products-image-aspect-ratio-11-square tweak-related-products-meta-alignment-under-center tweak-product-badge-style-square tweak-product-badge-position-top-left tweak-product-badge-inset-floating newsletter-style-dark hide-opentable-icons opentable-style-dark small-button-style-outline small-button-shape-rounded medium-button-style-outline medium-button-shape-pill large-button-style-outline large-button-shape-pill image-block-poster-text-alignment-center image-block-card-dynamic-font-sizing image-block-card-content-position-center image-block-card-text-alignment-left image-block-overlap-dynamic-font-sizing image-block-overlap-content-position-center image-block-overlap-text-alignment-left image-block-collage-dynamic-font-sizing image-block-collage-content-position-top image-block-collage-text-alignment-left image-block-stack-dynamic-font-sizing image-block-stack-text-alignment-left button-style-outline button-corner-style-pill tweak-product-quick-view-button-style-floating tweak-product-quick-view-button-position-bottom tweak-product-quick-view-lightbox-excerpt-display-truncate tweak-product-quick-view-lightbox-show-arrows tweak-product-quick-view-lightbox-show-close-button tweak-product-quick-view-lightbox-controls-weight-light tweak-share-buttons-style-icon-only tweak-share-buttons-icons-show tweak-share-buttons-counts-show tweak-share-buttons-standard-background-color native-currency-code-usd collection-5bd9b4b88a922daf4af8f62c collection-type-index collection-layout-default homepage view-list mobile-style-available has-logo-image has-social has-primary-nav has-secondary-nav has-tagline vsc-initialized" data-controller="BodyClassController" data-controllers-bound="BodyClassController" data-ajax-loader="loaded" data-gr-c-s-loaded="true">
+
+  <div class="overflow-wrapper">
+
+    
+    
+
+<input type="checkbox" name="mobile-nav-toggle" id="mobileNavToggle" class="mobile-nav-toggle-box hidden" data-controller="MobileNavController" data-controllers-bound="MobileNavController">
+
+<div class="mobile-bar-wrapper">
+  <div class="mobile-bar-flex-child"></div>
+  <div class="mobile-branding-wrapper">
+    
+      
+        <div class="mobile-logo-image"><a href="https://www.anshumandhar.com/" data-ajax-loader="ajax-loader-binded"><img src="./Anshuman Dhar&#39;s Portfolio_files/saved_resource" alt="Anshuman Dhar&#39;s Portfolio"></a></div>
+      
+      
+    
+  </div>
+  <label for="mobileNavToggle" class="mobile-nav-toggle-label" onclick="">
+    <svg class="Icon Icon--hamburger" viewBox="0 0 24 18">
+      <use xlink:href="/assets/ui-icons.svg#hamburger-icon--even" class="use--even"></use>
+      <use xlink:href="/assets/ui-icons.svg#hamburger-icon--odd" class="use--odd"></use>
+    </svg>
+    <svg class="Icon Icon--close" viewBox="0 0 20 20">
+      <use xlink:href="/assets/ui-icons.svg#close-icon"></use>
+    </svg>
+  </label>
 </div>
+
+<div class="overlay-nav-container" id="overlayNav">
+  <div class="overlay-nav-wrapper">
+    <div class="mobile-primary-nav-wrapper">
+  <nav class="mobile-primary-nav-links">
+    
+      
+
+        
+          
+            <div class="index active">
+              <a href="https://www.anshumandhar.com/" class="nav-item-index" data-ajax-loader="ajax-loader-binded">
+                All Work
+              </a>
+            </div>
+          
+        
+      
+
+    
+      
+
+        
+          
+            <div class="index">
+              <a href="https://www.anshumandhar.com/new-index" class="nav-item-index" data-ajax-loader="ajax-loader-binded">
+                Some Play
+              </a>
+            </div>
+          
+        
+      
+
+    
+  </nav>
+</div>
+
+
+
+    <div class="mobile-secondary-nav-wrapper">
+  <nav class="mobile-secondary-nav-links">
+    
+      
+
+        
+
+        
+
+          
+          <div class="collection folder-link">
+            <a href="https://www.anshumandhar.com/about" class="nav-item-page" data-ajax-loader="ajax-loader-binded">
+              About Me
+            </a>
+          </div>
+          
+
+        
+      
+      
+
+    
+      
+
+        
+
+        
+
+          
+          <div class="collection folder-link">
+            <a href="https://www.anshumandhar.com/resume" class="nav-item-page" data-ajax-loader="ajax-loader-binded">
+              Resume
+            </a>
+          </div>
+          
+
+        
+      
+      
+
+    
+  </nav>
+</div>
+
+
+
+    
+
+    
+  </div>
+</div>
+
+
+
+    <div id="site" class="site-container" style="padding-top: 0px; padding-bottom: 0px;">
+
+      
+      
+<header id="header" class="site-header loaded" role="banner" data-nc-base="header" data-nc-group="header" data-controller="AncillaryLayout" data-controllers-bound="AncillaryLayout">
+  <div data-nc-container="left">
+    
+
+    
+
+    
+
+    
+
+    
+    
+  <div id="mainNavWrapper" class="nav-wrapper primary-nav-wrapper" data-nc-element="primary-nav">
+      
+<nav class="site-navigation" role="navigation" data-content-field="navigation">
+  
+
+    
+      
+      <div class="nav-item index active homepage" id="id-5bd9b4b88a922daf4af8f62c">
+        <a href="https://www.anshumandhar.com/" class="nav-item-index" data-ajax-loader="ajax-loader-binded">
+          <span>All Work</span>
+        </a>
+      </div>
+      
+    
+
+  
+
+    
+      
+      <div class="nav-item index" id="id-5bd9b4964d7a9cf0e8e01e72">
+        <a href="https://www.anshumandhar.com/new-index" class="nav-item-index" data-ajax-loader="ajax-loader-binded">
+          <span>Some Play</span>
+        </a>
+      </div>
+      
+    
+
+    
+</nav>
+
+
+
+    </div></div>
+  <div data-nc-container="center"><div class="logo-wrapper" data-content-field="site-title" data-nc-element="branding">
+    
+      
+        <div class="logo-image"><a href="https://www.anshumandhar.com/" data-ajax-loader="ajax-loader-binded"><img src="./Anshuman Dhar&#39;s Portfolio_files/saved_resource" alt="Anshuman Dhar&#39;s Portfolio"></a></div>
+      
+    
+    </div></div>
+  <div data-nc-container="right"><div id="secondaryNavWrapper" class="nav-wrapper secondary-nav-wrapper" data-nc-element="secondary-nav">
+      
+<nav class="site-navigation" role="navigation" data-content-field="navigation">
+  
+
+    
+      
+
+      
+
+        
+        <div class="nav-item collection" id="id-5b6434888a922ddb0119dc54">
+          <a href="https://www.anshumandhar.com/about" class="nav-item-page" data-ajax-loader="ajax-loader-binded">
+            <span>About Me</span>
+          </a>
+        </div>
+        
+
+      
+    
+    
+
+  
+
+    
+      
+
+      
+
+        
+        <div class="nav-item collection" id="id-5b728d9a758d4657f519c9dc">
+          <a href="https://www.anshumandhar.com/resume" class="nav-item-page" data-ajax-loader="ajax-loader-binded">
+            <span>Resume</span>
+          </a>
+        </div>
+        
+
+      
+    
+    
+
+    
+</nav>
+
+
+
+    </div><div class="cart-wrapper" data-nc-element="cart">
+      
+
+    </div></div>
+</header>
+
+
+      <div id="content" class="content-container">
+
+        
+        
+          
+            
+
+  <div data-controller="BannerController" class="page-banner-wrapper " data-controllers-bound="BannerController" style="min-height: 0px;">
+
+    <div class="page-banner-image-container collection-thumbnail-image-container hide-collection-image content-fill">
+
+      
+        
+      
+
+    </div>
+
+    
+  </div>
+
+
+          
+        
+
+        <main id="page" class="site-page" role="main"><div class="page-text-wrapper clearfix" data-edit-main-image="Background" data-collection-id="5bd9b4b88a922daf4af8f62c">
+      <h1 class="page-title"><span data-content-field="title">All Work</span></h1>
+      <div class="page-description" data-content-field="description" data-default-description="Page Description"><p class="" style="white-space:pre-wrap;"><span><strong>Hello, I’m Anshuman <br></strong>a designer passionate about the future of tech and making lives easier.</span></p></div>
+    </div>
+
+          
+          
+          <div class="sqs-layout sqs-grid-12 columns-12 collection-header empty" data-layout-label="Collection" data-type="block-field" id="collection-header-5bd9b4b88a922daf4af8f62c"><div class="row sqs-row"><div class="col sqs-col-12 span-12"></div></div></div>
+          
+
+          <div class="main-content" data-content-field="main-content">
+            
+            <div class="index-list clearfix" data-controller="IndexController" data-collection-id="5bd9b4b88a922daf4af8f62c" data-controllers-bound="IndexController">
+
+	
+
+		<div id="index-section-victoria" class="index-section index-page-transition-link">
+			<article class="index-item has-item-image" data-item-id="5b72f2051ae6cf062baafc5b" data-url-id="victoria" style="background-color: #eb5757">
+				<a class="index-item-link intrinsic" href="/victoria" data-ajax-loader="ajax-loader-binded">
+					
+						<figure class="index-item-image-wrapper js-index-item-image-wrapper"><img class="index-item-image js-index-item-image" data-src="https://images.squarespace-cdn.com/content/v1/5b5c75daaa49a1a13621c537/1544259130881-Y50E55JVVMP0LG6ERVU5/ke17ZwdGBToddI8pDm48kEWP3-hvREnweJ050wvhyvB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UZ8v_8xPaFXnubzXJlS3wYyrY1kxbt3bHny-yDezekUcm4bjm9DAHF2kOsIZRJKXnA/ui-showcase-mockup-scene-copy.png" data-image="https://images.squarespace-cdn.com/content/v1/5b5c75daaa49a1a13621c537/1544259130881-Y50E55JVVMP0LG6ERVU5/ke17ZwdGBToddI8pDm48kEWP3-hvREnweJ050wvhyvB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UZ8v_8xPaFXnubzXJlS3wYyrY1kxbt3bHny-yDezekUcm4bjm9DAHF2kOsIZRJKXnA/ui-showcase-mockup-scene-copy.png" data-image-dimensions="2400x1800" data-image-focal-point="0.5,0.5" data-load="false" alt="ui-showcase-mockup-scene-copy.png" style="" data-image-resolution="2500w" src="./Anshuman Dhar&#39;s Portfolio_files/ui-showcase-mockup-scene-copy.png"></figure>
+					
+				</a>
+				<div class="index-item-text-wrapper">
+					<h2 class="index-item-title">
+						<a class="index-item-title-link" href="https://www.anshumandhar.com/victoria" data-ajax-loader="ajax-loader-binded"><span class="index-item-title-text">Victoria - AI Assistant for Discoverability</span></a>
+					</h2>
+
+					
+						
+					
+
+				</div>
+			</article>
+		</div>
+
+	
+
+		<div id="index-section-samsung-ux-design-internship" class="index-section index-page-transition-link">
+			<article class="index-item has-item-image" data-item-id="5dccff07024d5c72e67f2a0c" data-url-id="samsung-ux-design-internship" style="background-color: #010101">
+				<a class="index-item-link intrinsic" href="https://www.anshumandhar.com/samsung-ux-design-internship" data-ajax-loader="ajax-loader-binded">
+					
+						<figure class="index-item-image-wrapper js-index-item-image-wrapper"><img class="index-item-image js-index-item-image" data-src="https://images.squarespace-cdn.com/content/v1/5b5c75daaa49a1a13621c537/1574239895645-3Q12CO72GJKT55I4RSUN/ke17ZwdGBToddI8pDm48kP9OyZV1Twe3ZctB8CZaSjl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UW8vGi4hSewLD0zbqHuEjoDZZKR3nWuZQjUbLdnvMerMMW9u6oXQZQicHHG1WEE6fg/Samsung+Thumb.png" data-image="https://images.squarespace-cdn.com/content/v1/5b5c75daaa49a1a13621c537/1574239895645-3Q12CO72GJKT55I4RSUN/ke17ZwdGBToddI8pDm48kP9OyZV1Twe3ZctB8CZaSjl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UW8vGi4hSewLD0zbqHuEjoDZZKR3nWuZQjUbLdnvMerMMW9u6oXQZQicHHG1WEE6fg/Samsung+Thumb.png" data-image-dimensions="1616x1113" data-image-focal-point="0.5,0.5" data-load="false" alt="Samsung Thumb.png" style="" data-image-resolution="1500w" src="./Anshuman Dhar&#39;s Portfolio_files/Samsung+Thumb.png"></figure>
+					
+				</a>
+				<div class="index-item-text-wrapper">
+					<h2 class="index-item-title">
+						<a class="index-item-title-link" href="https://www.anshumandhar.com/samsung-ux-design-internship" data-ajax-loader="ajax-loader-binded"><span class="index-item-title-text">Samsung - UX Design Internship</span></a>
+					</h2>
+
+					
+						
+					
+
+				</div>
+			</article>
+		</div>
+
+	
+
+		<div id="index-section-pragati" class="index-section index-page-transition-link">
+			<article class="index-item has-item-image" data-item-id="5bf345878a922d87c7ced2d6" data-url-id="pragati" style="background-color: #ffd2e9">
+				<a class="index-item-link intrinsic" href="https://www.anshumandhar.com/pragati" data-ajax-loader="ajax-loader-binded">
+					
+						<figure class="index-item-image-wrapper js-index-item-image-wrapper"><img class="index-item-image js-index-item-image" data-src="https://images.squarespace-cdn.com/content/v1/5b5c75daaa49a1a13621c537/1546863757256-DSPS8PXX33ZZ5GAAF2RZ/ke17ZwdGBToddI8pDm48kFVC-beGl02E-yBEhwekpcp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UWR0nh2lxkoJcCQPFCoeVVR1aodJB8g4EC3tiXd4TIXtP7cJNZlDXbgJNE9ef52e8w/daydream-mockup.png" data-image="https://images.squarespace-cdn.com/content/v1/5b5c75daaa49a1a13621c537/1546863757256-DSPS8PXX33ZZ5GAAF2RZ/ke17ZwdGBToddI8pDm48kFVC-beGl02E-yBEhwekpcp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UWR0nh2lxkoJcCQPFCoeVVR1aodJB8g4EC3tiXd4TIXtP7cJNZlDXbgJNE9ef52e8w/daydream-mockup.png" data-image-dimensions="1624x1082" data-image-focal-point="0.5,0.5" data-load="false" alt="daydream-mockup.png" style="" data-image-resolution="1500w" src="./Anshuman Dhar&#39;s Portfolio_files/daydream-mockup.png"></figure>
+					
+				</a>
+				<div class="index-item-text-wrapper">
+					<h2 class="index-item-title">
+						<a class="index-item-title-link" href="https://www.anshumandhar.com/pragati" data-ajax-loader="ajax-loader-binded"><span class="index-item-title-text">Pragati - Making Effective Education a Habit</span></a>
+					</h2>
+
+					
+						
+					
+
+				</div>
+			</article>
+		</div>
+
+	
+
+		<div id="index-section-retreeve" class="index-section index-page-transition-link">
+			<article class="index-item has-item-image" data-item-id="5b9174a58985833b8ace9ef7" data-url-id="retreeve" style="background-color: #fecfbb">
+				<a class="index-item-link intrinsic" href="https://www.anshumandhar.com/retreeve" data-ajax-loader="ajax-loader-binded">
+					
+						<figure class="index-item-image-wrapper js-index-item-image-wrapper"><img class="index-item-image js-index-item-image" data-src="https://images.squarespace-cdn.com/content/v1/5b5c75daaa49a1a13621c537/1574676434500-ZLUD3NY22CYN03QLLMGE/ke17ZwdGBToddI8pDm48kJK4Mm1kch8SFO9ZNkN1NT97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmFk_H6M1tkD9NpL7mXac0oVSXdFfjxR5AjcLwGSebOiGBsFzzcw3xKxvyC_6CFFG_/Retreeve+-+thumb+.jpg" data-image="https://images.squarespace-cdn.com/content/v1/5b5c75daaa49a1a13621c537/1574676434500-ZLUD3NY22CYN03QLLMGE/ke17ZwdGBToddI8pDm48kJK4Mm1kch8SFO9ZNkN1NT97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmFk_H6M1tkD9NpL7mXac0oVSXdFfjxR5AjcLwGSebOiGBsFzzcw3xKxvyC_6CFFG_/Retreeve+-+thumb+.jpg" data-image-dimensions="1080x1080" data-image-focal-point="0.5,0.5" data-load="false" alt="Retreeve - thumb .jpg" style="" data-image-resolution="2500w" src="./Anshuman Dhar&#39;s Portfolio_files/Retreeve+-+thumb+.jpg"></figure>
+					
+				</a>
+				<div class="index-item-text-wrapper">
+					<h2 class="index-item-title">
+						<a class="index-item-title-link" href="https://www.anshumandhar.com/retreeve" data-ajax-loader="ajax-loader-binded"><span class="index-item-title-text">UX Research - ReTreeve</span></a>
+					</h2>
+
+					
+						
+					
+
+				</div>
+			</article>
+		</div>
+
+	
+
+		<div id="index-section-google-design-task" class="index-section index-page-transition-link">
+			<article class="index-item has-item-image" data-item-id="5dccf99e9394dc2c56ed3aaf" data-url-id="google-design-task" style="background-color: #e7e7e7">
+				<a class="index-item-link intrinsic" href="https://www.anshumandhar.com/google-design-task" data-ajax-loader="ajax-loader-binded">
+					
+						<figure class="index-item-image-wrapper js-index-item-image-wrapper"><img class="index-item-image js-index-item-image" data-src="https://images.squarespace-cdn.com/content/v1/5b5c75daaa49a1a13621c537/1574277313032-M2KNNZRQ8YWQQBRZ6VQE/ke17ZwdGBToddI8pDm48kP63-qKlKjnU9DI8MZgz9Jl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UVlOX2mL16LuznyzcS50Yk6mjMp_4QELb3azlgPdTFPROpYghpI-Ha_TwZsqqmJXng/Google+Thumb.png" data-image="https://images.squarespace-cdn.com/content/v1/5b5c75daaa49a1a13621c537/1574277313032-M2KNNZRQ8YWQQBRZ6VQE/ke17ZwdGBToddI8pDm48kP63-qKlKjnU9DI8MZgz9Jl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UVlOX2mL16LuznyzcS50Yk6mjMp_4QELb3azlgPdTFPROpYghpI-Ha_TwZsqqmJXng/Google+Thumb.png" data-image-dimensions="1636x1140" data-image-focal-point="0.5,0.5" data-load="false" alt="Google Thumb.png" style="" data-image-resolution="1500w" src="./Anshuman Dhar&#39;s Portfolio_files/Google+Thumb.png"></figure>
+					
+				</a>
+				<div class="index-item-text-wrapper">
+					<h2 class="index-item-title">
+						<a class="index-item-title-link" href="https://www.anshumandhar.com/google-design-task" data-ajax-loader="ajax-loader-binded"><span class="index-item-title-text">Google Design Task -  UX Intern Application</span></a>
+					</h2>
+
+					
+						
+					
+
+				</div>
+			</article>
+		</div>
+
+	
+
+		<div id="index-section-onestop" class="index-section index-page-transition-link">
+			<article class="index-item has-item-image" data-item-id="5bf32ff3352f53baf7de453b" data-url-id="onestop" style="background-color: #3d83ff">
+				<a class="index-item-link intrinsic" href="https://www.anshumandhar.com/onestop" data-ajax-loader="ajax-loader-binded">
+					
+						<figure class="index-item-image-wrapper js-index-item-image-wrapper"><img class="index-item-image js-index-item-image" data-src="https://images.squarespace-cdn.com/content/v1/5b5c75daaa49a1a13621c537/1546790130452-LG9R42M4LOVTHYW0PL2A/ke17ZwdGBToddI8pDm48kL1VVEyHnSrXIPdTlatDh5J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1Ubm2Qq8mCSRvVqQT298n90ZX_4KPXwz29BYBKyTcZFttJvwGh1qtNWvMhYKnvaKhbA/Splash.png" data-image="https://images.squarespace-cdn.com/content/v1/5b5c75daaa49a1a13621c537/1546790130452-LG9R42M4LOVTHYW0PL2A/ke17ZwdGBToddI8pDm48kL1VVEyHnSrXIPdTlatDh5J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1Ubm2Qq8mCSRvVqQT298n90ZX_4KPXwz29BYBKyTcZFttJvwGh1qtNWvMhYKnvaKhbA/Splash.png" data-image-dimensions="2241x1532" data-image-focal-point="0.5,0.5" data-load="false" alt="Splash.png" style="" data-image-resolution="1500w" src="./Anshuman Dhar&#39;s Portfolio_files/Splash.png"></figure>
+					
+				</a>
+				<div class="index-item-text-wrapper">
+					<h2 class="index-item-title">
+						<a class="index-item-title-link" href="https://www.anshumandhar.com/onestop" data-ajax-loader="ajax-loader-binded"><span class="index-item-title-text">OneStop - The Ultimate Student App</span></a>
+					</h2>
+
+					
+						
+					
+
+				</div>
+			</article>
+		</div>
+
+	
+
+	</div>
+          </div>
+
+          
+          
+          <div class="sqs-layout sqs-grid-12 columns-12 collection-footer empty" data-layout-label="Collection" data-type="block-field" id="collection-footer-5bd9b4b88a922daf4af8f62c"><div class="row sqs-row"><div class="col sqs-col-12 span-12"></div></div></div>
+          
+
+          
+
+        </main>
+
+        <footer id="footer" class="site-footer" role="contentinfo">
+          <div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Footer" data-type="block-field" data-updated-on="1574751678511" id="footer-blocks"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block horizontalrule-block sqs-block-horizontalrule" data-block-type="47" id="block-yui_3_17_2_1_1542639153725_9287"><div class="sqs-block-content"><hr></div></div><div class="row sqs-row"><div class="col sqs-col-8 span-8"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-b299dd1f01d8cf109bda"><div class="sqs-block-content"><h3 style="white-space:pre-wrap;"><strong>Sup’ nerd bird, Say hi! </strong>👋🏽<strong><br>To begin Meme-war Mode, send me -<br>”Should designers code?”</strong></h3><p class="" style="white-space:pre-wrap;">In the mood for geeking out over the human frailties in <strong>Marvel superheroes</strong>, the importance of <strong>Psychology in Design</strong> or just share your love for <a href="https://open.spotify.com/user/31bm36r7ltoj35dvlefhnunszchy?si=7c6LIl1CThiN0JS491LWnQ"><strong>dope music</strong></a>? You've come to the right person! Because the only thing I love more than talking… is getting to know people. 🎭<br>Ping me to learn more about me or my work!<br><em>(Psssst! Brownie points </em>🍪<em>for you if you noticed the haiku)</em></p></div></div></div><div class="col sqs-col-4 span-4"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1542639153725_9735"><div class="sqs-block-content"><h3 style="white-space:pre-wrap;"><a href="mailto:dhar.anshuman@gmail.com" target="_blank"><strong>dhar.anshuman@gmail.com</strong></a></h3></div></div><div class="sqs-block socialaccountlinks-v2-block sqs-block-socialaccountlinks-v2" data-block-type="54" id="block-yui_3_17_2_1_1542630461066_9166"><div class="sqs-block-content">
+
+
+
+<div class="sqs-svg-icon--outer social-icon-alignment-left social-icons-color-black social-icons-size-small social-icons-style-regular ">
+  <nav class="sqs-svg-icon--list">
+    <a href="http://www.linkedin.com/in/anshuman-dhar-7aa2b712b" target="_blank" class="sqs-svg-icon--wrapper linkedin" aria-label="Anshuman Dhar">
+      <div>
+        <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+          <use class="sqs-use--icon" xlink:href="#linkedin-icon"></use>
+          <use class="sqs-use--mask" xlink:href="#linkedin-mask"></use>
+        </svg>
+      </div>
+    </a><a href="https://medium.com/@ElatedHooman" target="_blank" class="sqs-svg-icon--wrapper medium" aria-label="Medium">
+      <div>
+        <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+          <use class="sqs-use--icon" xlink:href="#medium-icon"></use>
+          <use class="sqs-use--mask" xlink:href="#medium-mask"></use>
+        </svg>
+      </div>
+    </a><a href="http://www.dribbble.com/dharanshumee35" target="_blank" class="sqs-svg-icon--wrapper dribbble" aria-label="dharanshumee35">
+      <div>
+        <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+          <use class="sqs-use--icon" xlink:href="#dribbble-icon"></use>
+          <use class="sqs-use--mask" xlink:href="#dribbble-mask"></use>
+        </svg>
+      </div>
+    </a><a href="http://instagram.com/anshuman.dhar" target="_blank" class="sqs-svg-icon--wrapper instagram" aria-label="Anshuman Dhar">
+      <div>
+        <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+          <use class="sqs-use--icon" xlink:href="#instagram-icon"></use>
+          <use class="sqs-use--mask" xlink:href="#instagram-mask"></use>
+        </svg>
+      </div>
+    </a><a href="https://twitter.com/Siang_117" target="_blank" class="sqs-svg-icon--wrapper twitter" aria-label="Anshuman Dhar">
+      <div>
+        <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+          <use class="sqs-use--icon" xlink:href="#twitter-icon"></use>
+          <use class="sqs-use--mask" xlink:href="#twitter-mask"></use>
+        </svg>
+      </div>
+    </a>
+  </nav>
+</div>
+</div></div></div></div><div class="sqs-block spacer-block sqs-block-spacer" data-aspect-ratio="1.5625" data-block-type="21" id="block-yui_3_17_2_1_1542640195076_27632"><div class="sqs-block-content sqs-intrinsic" id="yui_3_17_2_1_1594658898739_60" style="padding-bottom: 1.5625%;">&nbsp;</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1542639153725_15362"><div class="sqs-block-content"><p style="text-align:center;white-space:pre-wrap;" class="">© 2019 - Made with 💙by Anshuman Dhar</p></div></div></div></div></div>
+        </footer>
+
+      </div>
+    </div>
+
+
+    <script src="./Anshuman Dhar&#39;s Portfolio_files/site-bundle.js" type="text/javascript"></script>
+
+    <script type="text/javascript" data-sqs-type="imageloader-bootstrapper">(function() {if(window.ImageLoader) { window.ImageLoader.bootstrap({}, document); }})();</script><script>Squarespace.afterBodyLoad(Y);</script><svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none" data-usage="social-icons-svg"><symbol id="linkedin-icon" viewBox="0 0 64 64"><path d="M20.4,44h5.4V26.6h-5.4V44z M23.1,18c-1.7,0-3.1,1.4-3.1,3.1c0,1.7,1.4,3.1,3.1,3.1 c1.7,0,3.1-1.4,3.1-3.1C26.2,19.4,24.8,18,23.1,18z M39.5,26.2c-2.6,0-4.4,1.4-5.1,2.8h-0.1v-2.4h-5.2V44h5.4v-8.6 c0-2.3,0.4-4.5,3.2-4.5c2.8,0,2.8,2.6,2.8,4.6V44H46v-9.5C46,29.8,45,26.2,39.5,26.2z"></path></symbol><symbol id="linkedin-mask" viewBox="0 0 64 64"><path d="M0,0v64h64V0H0z M25.8,44h-5.4V26.6h5.4V44z M23.1,24.3c-1.7,0-3.1-1.4-3.1-3.1c0-1.7,1.4-3.1,3.1-3.1 c1.7,0,3.1,1.4,3.1,3.1C26.2,22.9,24.8,24.3,23.1,24.3z M46,44h-5.4v-8.4c0-2,0-4.6-2.8-4.6c-2.8,0-3.2,2.2-3.2,4.5V44h-5.4V26.6 h5.2V29h0.1c0.7-1.4,2.5-2.8,5.1-2.8c5.5,0,6.5,3.6,6.5,8.3V44z"></path></symbol><symbol id="medium-icon" viewBox="0 0 64 64"><path d="M46.908,23.95c-0.006-0.005-0.011-0.01-0.018-0.014l-0.01-0.005l-9.05-4.525c-0.061-0.031-0.125-0.051-0.19-0.068c-0.082-0.021-0.165-0.034-0.249-0.034c-0.347,0-0.692,0.174-0.878,0.477l-5.21,8.467l6.538,10.625l9.095-14.779C46.966,24.046,46.952,23.985,46.908,23.95z M28.433,35.958L37,40.241L28.433,26.32V35.958zM38.287,40.884l7.052,3.526C46.256,44.869,47,44.548,47,43.693V26.726L38.287,40.884z M26.946,23.964l-8.839-4.419c-0.16-0.08-0.312-0.118-0.449-0.118c-0.387,0-0.659,0.299-0.659,0.802v19.083c0,0.511,0.374,1.116,0.831,1.344l7.785,3.892c0.2,0.1,0.39,0.147,0.561,0.147c0.484,0,0.823-0.374,0.823-1.003V24.051C27,24.014,26.979,23.98,26.946,23.964z"></path></symbol><symbol id="medium-mask" viewBox="0 0 64 64"><path d="M0,0v64h64V0H0z M27,43.693c0,0.628-0.339,1.003-0.823,1.003c-0.172,0-0.362-0.047-0.561-0.147l-7.785-3.892C17.374,40.428,17,39.823,17,39.312V20.229c0-0.503,0.271-0.802,0.659-0.802c0.137,0,0.289,0.038,0.449,0.118l8.839,4.419C26.979,23.98,27,24.014,27,24.051V43.693z M28.433,35.958V26.32L37,40.241L28.433,35.958z M31.303,28.248l5.21-8.467c0.187-0.303,0.532-0.477,0.878-0.477c0.084,0,0.167,0.013,0.249,0.034c0.065,0.017,0.129,0.038,0.19,0.068l9.05,4.525l0.01,0.005c0.007,0.003,0.012,0.009,0.018,0.014c0.043,0.034,0.058,0.095,0.028,0.145l-9.095,14.779L31.303,28.248z M47,43.693c0,0.855-0.744,1.176-1.661,0.717l-7.052-3.526L47,26.726V43.693z"></path></symbol><symbol id="dribbble-icon" viewBox="0 0 64 64"><path d="M32,48c-8.8,0-16-7.2-16-16s7.2-16,16-16 s16,7.2,16,16S40.8,48,32,48z M45.5,34.2C45,34,41.3,32.9,37,33.6c1.8,4.9,2.5,8.9,2.7,9.7C42.7,41.3,44.9,38,45.5,34.2z M37.3,44.6 c-0.2-1.2-1-5.4-2.9-10.4c0,0-0.1,0-0.1,0c-7.7,2.7-10.5,8-10.7,8.5c2.3,1.8,5.2,2.9,8.4,2.9C33.9,45.7,35.7,45.3,37.3,44.6z  M21.8,41.2c0.3-0.5,4.1-6.7,11.1-9c0.2-0.1,0.4-0.1,0.5-0.2c-0.3-0.8-0.7-1.6-1.1-2.3c-6.8,2-13.4,2-14,1.9c0,0.1,0,0.3,0,0.4 C18.3,35.5,19.7,38.7,21.8,41.2z M18.6,29.2c0.6,0,6.2,0,12.6-1.7c-2.3-4-4.7-7.4-5.1-7.9C22.4,21.5,19.5,25,18.6,29.2z M28.8,18.7 c0.4,0.5,2.9,3.9,5.1,8c4.9-1.8,6.9-4.6,7.2-4.9c-2.4-2.1-5.6-3.4-9.1-3.4C30.9,18.4,29.8,18.5,28.8,18.7z M42.6,23.4 c-0.3,0.4-2.6,3.3-7.6,5.4c0.3,0.7,0.6,1.3,0.9,2c0.1,0.2,0.2,0.5,0.3,0.7c4.5-0.6,9.1,0.3,9.5,0.4C45.6,28.7,44.5,25.7,42.6,23.4z"></path></symbol><symbol id="dribbble-mask" viewBox="0 0 64 64"><path d="M34.3,34.3c-7.7,2.7-10.5,8-10.7,8.5c2.3,1.8,5.2,2.9,8.4,2.9c1.9,0,3.7-0.4,5.3-1.1 C37.1,43.4,36.3,39.2,34.3,34.3C34.4,34.2,34.4,34.3,34.3,34.3z M31.3,27.6c-2.3-4-4.7-7.4-5.1-7.9c-3.8,1.8-6.7,5.3-7.6,9.6 C19.2,29.2,24.9,29.3,31.3,27.6z M33,32.1c0.2-0.1,0.4-0.1,0.5-0.2c-0.3-0.8-0.7-1.6-1.1-2.3c-6.8,2-13.4,2-14,1.9 c0,0.1,0,0.3,0,0.4c0,3.5,1.3,6.7,3.5,9.1C22.2,40.6,25.9,34.4,33,32.1z M41.1,21.8c-2.4-2.1-5.6-3.4-9.1-3.4 c-1.1,0-2.2,0.1-3.2,0.4c0.4,0.5,2.9,3.9,5.1,8C38.8,24.9,40.8,22.1,41.1,21.8z M34.9,28.8c0.3,0.7,0.6,1.3,0.9,2 c0.1,0.2,0.2,0.5,0.3,0.7c4.5-0.6,9.1,0.3,9.5,0.4c0-3.2-1.2-6.2-3.1-8.5C42.3,23.8,40,26.7,34.9,28.8z M37,33.6 c1.8,4.9,2.5,8.9,2.7,9.7c3.1-2.1,5.2-5.4,5.9-9.2C45,34,41.3,32.9,37,33.6z M0,0v64h64V0H0z M32,48c-8.8,0-16-7.2-16-16 s7.2-16,16-16s16,7.2,16,16S40.8,48,32,48z"></path></symbol><symbol id="instagram-icon" viewBox="0 0 64 64"><path d="M46.91,25.816c-0.073-1.597-0.326-2.687-0.697-3.641c-0.383-0.986-0.896-1.823-1.73-2.657c-0.834-0.834-1.67-1.347-2.657-1.73c-0.954-0.371-2.045-0.624-3.641-0.697C36.585,17.017,36.074,17,32,17s-4.585,0.017-6.184,0.09c-1.597,0.073-2.687,0.326-3.641,0.697c-0.986,0.383-1.823,0.896-2.657,1.73c-0.834,0.834-1.347,1.67-1.73,2.657c-0.371,0.954-0.624,2.045-0.697,3.641C17.017,27.415,17,27.926,17,32c0,4.074,0.017,4.585,0.09,6.184c0.073,1.597,0.326,2.687,0.697,3.641c0.383,0.986,0.896,1.823,1.73,2.657c0.834,0.834,1.67,1.347,2.657,1.73c0.954,0.371,2.045,0.624,3.641,0.697C27.415,46.983,27.926,47,32,47s4.585-0.017,6.184-0.09c1.597-0.073,2.687-0.326,3.641-0.697c0.986-0.383,1.823-0.896,2.657-1.73c0.834-0.834,1.347-1.67,1.73-2.657c0.371-0.954,0.624-2.045,0.697-3.641C46.983,36.585,47,36.074,47,32S46.983,27.415,46.91,25.816z M44.21,38.061c-0.067,1.462-0.311,2.257-0.516,2.785c-0.272,0.7-0.597,1.2-1.122,1.725c-0.525,0.525-1.025,0.85-1.725,1.122c-0.529,0.205-1.323,0.45-2.785,0.516c-1.581,0.072-2.056,0.087-6.061,0.087s-4.48-0.015-6.061-0.087c-1.462-0.067-2.257-0.311-2.785-0.516c-0.7-0.272-1.2-0.597-1.725-1.122c-0.525-0.525-0.85-1.025-1.122-1.725c-0.205-0.529-0.45-1.323-0.516-2.785c-0.072-1.582-0.087-2.056-0.087-6.061s0.015-4.48,0.087-6.061c0.067-1.462,0.311-2.257,0.516-2.785c0.272-0.7,0.597-1.2,1.122-1.725c0.525-0.525,1.025-0.85,1.725-1.122c0.529-0.205,1.323-0.45,2.785-0.516c1.582-0.072,2.056-0.087,6.061-0.087s4.48,0.015,6.061,0.087c1.462,0.067,2.257,0.311,2.785,0.516c0.7,0.272,1.2,0.597,1.725,1.122c0.525,0.525,0.85,1.025,1.122,1.725c0.205,0.529,0.45,1.323,0.516,2.785c0.072,1.582,0.087,2.056,0.087,6.061S44.282,36.48,44.21,38.061z M32,24.297c-4.254,0-7.703,3.449-7.703,7.703c0,4.254,3.449,7.703,7.703,7.703c4.254,0,7.703-3.449,7.703-7.703C39.703,27.746,36.254,24.297,32,24.297z M32,37c-2.761,0-5-2.239-5-5c0-2.761,2.239-5,5-5s5,2.239,5,5C37,34.761,34.761,37,32,37z M40.007,22.193c-0.994,0-1.8,0.806-1.8,1.8c0,0.994,0.806,1.8,1.8,1.8c0.994,0,1.8-0.806,1.8-1.8C41.807,22.999,41.001,22.193,40.007,22.193z"></path></symbol><symbol id="instagram-mask" viewBox="0 0 64 64"><path d="M43.693,23.153c-0.272-0.7-0.597-1.2-1.122-1.725c-0.525-0.525-1.025-0.85-1.725-1.122c-0.529-0.205-1.323-0.45-2.785-0.517c-1.582-0.072-2.056-0.087-6.061-0.087s-4.48,0.015-6.061,0.087c-1.462,0.067-2.257,0.311-2.785,0.517c-0.7,0.272-1.2,0.597-1.725,1.122c-0.525,0.525-0.85,1.025-1.122,1.725c-0.205,0.529-0.45,1.323-0.516,2.785c-0.072,1.582-0.087,2.056-0.087,6.061s0.015,4.48,0.087,6.061c0.067,1.462,0.311,2.257,0.516,2.785c0.272,0.7,0.597,1.2,1.122,1.725s1.025,0.85,1.725,1.122c0.529,0.205,1.323,0.45,2.785,0.516c1.581,0.072,2.056,0.087,6.061,0.087s4.48-0.015,6.061-0.087c1.462-0.067,2.257-0.311,2.785-0.516c0.7-0.272,1.2-0.597,1.725-1.122s0.85-1.025,1.122-1.725c0.205-0.529,0.45-1.323,0.516-2.785c0.072-1.582,0.087-2.056,0.087-6.061s-0.015-4.48-0.087-6.061C44.143,24.476,43.899,23.682,43.693,23.153z M32,39.703c-4.254,0-7.703-3.449-7.703-7.703s3.449-7.703,7.703-7.703s7.703,3.449,7.703,7.703S36.254,39.703,32,39.703z M40.007,25.793c-0.994,0-1.8-0.806-1.8-1.8c0-0.994,0.806-1.8,1.8-1.8c0.994,0,1.8,0.806,1.8,1.8C41.807,24.987,41.001,25.793,40.007,25.793z M0,0v64h64V0H0z M46.91,38.184c-0.073,1.597-0.326,2.687-0.697,3.641c-0.383,0.986-0.896,1.823-1.73,2.657c-0.834,0.834-1.67,1.347-2.657,1.73c-0.954,0.371-2.044,0.624-3.641,0.697C36.585,46.983,36.074,47,32,47s-4.585-0.017-6.184-0.09c-1.597-0.073-2.687-0.326-3.641-0.697c-0.986-0.383-1.823-0.896-2.657-1.73c-0.834-0.834-1.347-1.67-1.73-2.657c-0.371-0.954-0.624-2.044-0.697-3.641C17.017,36.585,17,36.074,17,32c0-4.074,0.017-4.585,0.09-6.185c0.073-1.597,0.326-2.687,0.697-3.641c0.383-0.986,0.896-1.823,1.73-2.657c0.834-0.834,1.67-1.347,2.657-1.73c0.954-0.371,2.045-0.624,3.641-0.697C27.415,17.017,27.926,17,32,17s4.585,0.017,6.184,0.09c1.597,0.073,2.687,0.326,3.641,0.697c0.986,0.383,1.823,0.896,2.657,1.73c0.834,0.834,1.347,1.67,1.73,2.657c0.371,0.954,0.624,2.044,0.697,3.641C46.983,27.415,47,27.926,47,32C47,36.074,46.983,36.585,46.91,38.184z M32,27c-2.761,0-5,2.239-5,5s2.239,5,5,5s5-2.239,5-5S34.761,27,32,27z"></path></symbol><symbol id="twitter-icon" viewBox="0 0 64 64"><path d="M48,22.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C41.7,19.8,40,19,38.2,19c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,2.9,10.1,2.9c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C46,24.5,47.1,23.4,48,22.1z"></path></symbol><symbol id="twitter-mask" viewBox="0 0 64 64"><path d="M0,0v64h64V0H0z M44.7,25.5c0,0.3,0,0.6,0,0.8C44.7,35,38.1,45,26.1,45c-3.7,0-7.2-1.1-10.1-2.9 c0.5,0.1,1,0.1,1.6,0.1c3.1,0,5.9-1,8.2-2.8c-2.9-0.1-5.3-2-6.1-4.6c0.4,0.1,0.8,0.1,1.2,0.1c0.6,0,1.2-0.1,1.7-0.2 c-3-0.6-5.3-3.3-5.3-6.4c0,0,0-0.1,0-0.1c0.9,0.5,1.9,0.8,3,0.8c-1.8-1.2-2.9-3.2-2.9-5.5c0-1.2,0.3-2.3,0.9-3.3 c3.2,4,8.1,6.6,13.5,6.9c-0.1-0.5-0.2-1-0.2-1.5c0-3.6,2.9-6.6,6.6-6.6c1.9,0,3.6,0.8,4.8,2.1c1.5-0.3,2.9-0.8,4.2-1.6 c-0.5,1.5-1.5,2.8-2.9,3.6c1.3-0.2,2.6-0.5,3.8-1C47.1,23.4,46,24.5,44.7,25.5z"></path></symbol></svg>
+
+
+  
+
+</div><div>
+    <div id="twoseven-ext-tab-media-modal" class="twoseven-ext-tab-media-modal" style="display: none;">
+      <!-- Modal content -->
+      <div class="twoseven-ext-tab-media-modal-content">
+        <div class="iframe-container" style="height: 100%; width: 100%;">
+          <span class="close">×</span>
+        </div>
+      </div>
+    </div></div><div id="motion-extension" class="motion-extension-div" style="visibility: hidden;"><div class="motion-extension-div no-print"><iframe id="motion-intervention-iframe" class="motion-iframe" style="visibility: hidden;" src="./Anshuman Dhar&#39;s Portfolio_files/saved_resource.html"></iframe><div id="motion-sidebar-iframe-container" class="motion-extension-div motion-sidebar motion-sidebar-general" style="top: 237px;"><iframe class="motion-sidebar motion-iframe motion-sidebar-general" id="motion-sidebar-iframe" src="./Anshuman Dhar&#39;s Portfolio_files/saved_resource(1).html"></iframe></div><iframe class="motion-iframe" id="motion-generic-notification-iframe" src="./Anshuman Dhar&#39;s Portfolio_files/saved_resource(2).html"></iframe></div></div></body></html>
