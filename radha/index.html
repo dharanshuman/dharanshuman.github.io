@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://unpkg.com/telescopic-text/lib/index.js"></script>
+  <link href="https://unpkg.com/telescopic-text/lib/index.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+
+  section{
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    padding: 10px;
+  }
+
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+    img {
+      width:95vw;
+      padding: 0px;
+    }
+  }
+
+  h1 {
+  font-size: 32px;
+  }
+
+  </style>
+
+</head>
+
+<body style="background-color:hsl(29, 100%, 96%);">
+<section>
+<div style="max-width: 600px; overflow: hidden; padding: 10px;"><img src="thinking.png" style="width: 100%;"></div>
+<article>
+<h1 style="color:#6b8f71; margin-top: 2px; margin-bottom: 2px">Dear Radha,</h1>
+
+<div id="telescopicPoem"></div>
+<script>
+
+//   const telescopicContent = createTelescopicTextFromBulletedList(`-Thank you for
+// -existing.
+//  -making life more meaningful by
+//  -taking space in
+//   -being unapologetically yourself and bringing so much joy into
+//  -my world.`);
+//   const container = document.getElementById("telescopicPoem");
+//   container.appendChild(telescopicContent);
+
+  const content = `
+  -Thank you for
+  -existing.
+   -making life more meaningful by
+   -taking space in
+    -being unapologetically yourself and bringing so much joy into
+   -my world.
+  -<br>
+  -<br>
+
+  -Thank you for
+  -loving all of me.
+   -loving all of me — the sunshine, and the rain.
+   -Thank you for your
+   -patience
+    -warmth and enormous amounts of affection, when it comes to dealing
+   -with me.
+  -<br>
+  -<br>
+
+  -A
+  -beautiful woman...
+   -beautiful woman doesn't come close to describing the
+   -literal
+    -literal (and I really mean <b>literally</b>, like... look at yourself!!!)
+   -angel that you are.
+  -<br>
+  -<br>
+  -But also such a
+  -kind,
+   -kind human being. Don't think it goes unnoticed, all the
+   -things you do.
+    -acts of kindness you manifest in ways others might not.
+   -I know because I've looked into
+   -your eyes,
+    -the beautiful ocean the lives in your eyes,
+   -and seen your
+  -caring
+   -thoughtful,
+    -thoughtfulness in every action,
+   -attentive
+    -attention to everything important
+   -and
+   -affectionate
+    -affection to my
+  -soul.
+  -<br>
+  -<br>
+  -i just want you to know that
+  -i see you,
+   -i see you.
+   -When you
+   -take on so much weight on your shoulders but
+    -had to grow up much sooner than you wanted to, and still
+   -never complain,
+   -i see you,
+    -i see you.
+    -When you push yourself to become the best version of yourself you can be,
+    -i see you,
+     -i see you.
+     -When you console me even when you've got your own shit to figure out,
+     -i see you...
+      -i see you and am grateful for you,
+  -<br>
+  -<br>
+  -all of you,
+   -every
+   -bit
+    -square inch
+   -of your
+   -mind, body and soul...
+    -mind.
+     -mind... I'm infatuated by the
+     -way you think.
+      -way your brain connects dots and how even losing myself in your mind,
+      -feels like a traveller finally coming home.
+    -Your body.
+     -Your body, which will forever
+     -strike me with awe
+      -turn me into Shakespear and make me write a ballad about sundresses
+     -every single time.
+    -Your soul.
+     -Your soul, the only thing capable of
+     -making me cry
+      -making me cry at the most random places,
+     -out of
+     -sheer happiness.
+      -an overwhelming amount of
+      -emotion.
+       -happiness, appreciation and affection.
+  -<br>
+  -<br>
+  -and
+  -i love you
+   -i love you so much, it hurts my chest. I want
+   -to hug you
+    -to hug you, touch you and have you in my arms. I want to let you know how much I care for you
+  -with every cell in my body.
+  `
+  const config = { textMode: TextMode.Html };
+  const telescopicContent = createTelescopicTextFromBulletedList(content, config);
+  const container = document.getElementById("telescopicPoem");
+  container.appendChild(telescopicContent);
+
+</script>
+
+<p> -love, anshuman </p>
+</article>
+</section>
+
+</body>
+</html>
