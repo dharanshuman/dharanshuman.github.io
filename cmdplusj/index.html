@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://unpkg.com/telescopic-text/lib/index.js"></script>
+  <link href="https://unpkg.com/telescopic-text/lib/index.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+
+  section{
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    padding: 10px;
+  }
+
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+    img {
+      width:95vw;
+      padding: 0px;
+    }
+  }
+
+  h1 {
+  font-size: 32px;
+  }
+
+  </style>
+
+</head>
+
+<body style="background-color:hsl(29, 100%, 96%);">
+<section>
+<div style="max-width: 600px; overflow: hidden; padding: 10px;"><img src="journey.webp" style="width: 100%;"></div>
+<article>
+<h1 style="color:#6b8f71; margin-top: 2px; margin-bottom: 2px">A parting note</h1>
+
+<div id="telescopicPoem"></div>
+<script>
+
+//   const telescopicContent = createTelescopicTextFromBulletedList(`-Thank you for
+// -existing.
+//  -making life more meaningful by
+//  -taking space in
+//   -being unapologetically yourself and bringing so much joy into
+//  -my world.`);
+//   const container = document.getElementById("telescopicPoem");
+//   container.appendChild(telescopicContent);
+
+  const content = `
+  -When 
+  -we
+    -Viba & I had
+  -started this, we had no idea how big the space of mentorship was going to become.
+  -It was a lot 
+   -It became clear to us that it was a tall order for
+  - for two college kids to handle.
+  - Lots of things changed.
+    -My cofounder, Viba, left 4 months after we launched.
+    -I’ll always be grateful, because Command+J wouldn’t be a reality without her.
+  - As I struggled to keep the lights on by myself and improve the platform based on your feedback, the pandemic happened.
+  -<br>
+  -<br>
+
+  -After months of
+  -contemplation,
+    -thinking about what a sustainable future for the platform could be...
+  -I
+  -formed a new team.
+    -decided to put together a team and treat Command+J more like an organization than a school project. 
+  -With this incredible team of volunteers,
+  -we set out to rethink the platform.
+    -we poured our hearts into evolving Command+J beyond a passion project. We listened to your feedback, revamped our branding, and rallied exceptional mentors.
+  -Along with lots of luck in navigating the pandemic's uncertainties.
+  -<br>
+  -<br>
+
+  -Unfortunately our
+  -luck ran out just a couple of days before our launch.
+    -luck ran out just a couple of days before our launch. We faced unforeseeable hurdles that, despite our best efforts, disrupted our stride.
+  -We rescheduled.
+  -We made changes 
+    -We prioritized health and mental well being… 
+  -and eventually did launch.
+  -But
+    -, but something had changed. Call it nazar, call it a domino effect… But one thing after the other,
+  -things out of our control just kept going horribly wrong.
+  -<br>
+  -<br>
+  -Initially I felt like we failed.
+    -For the longest time I carried around this feeling that it had failed, and kept being extremely harsh on myself.
+  -But over time, I came to realize that success isn't measured solely by the outcome.
+  -The goal with Command+J wasn’t money or fame. 
+  -I simply wanted
+    -I had always told myself - if by making something that didn’t exist before, I’m able 
+  -to make a positive impact in <b>just one person’s</b> life. That would be a win for me.
+  -<br>
+  -<br>
+  -The platform ended up helping a
+  -school kid,
+    -get into NID,
+  -gave an aspiring automobile designer
+  -hope,
+    -hope that they too can have a career in India,
+  -gave a fashion designer
+  -inspiration,
+    -a chance to talk with a mentor who showcased their work at Lake Fashion Week, 
+  -or an industrial designer
+  -a role model!
+    -a way to talk to people who won red dot awards! 
+  -In my eyes, we more than succeeded.
+  -<br>
+  -<br>
+  -Your stories have been the 
+  -driving force behind our efforts.
+    -the driving force behind our efforts. There were days that we almost wanted to give up, but excerpts from informal interviews with y'all about our impact kept us going.
+  -If you have a story to share, please reply to this email. We'd love to hear from you.
+  -<br>
+  -<br>
+  -I’m so proud of <a href=”https://cmdplusj-web.azurewebsites.net/about/”> all of the people</a> involved in the project who did what we could given the circumstances (including this tight <a href=”https://www.youtube.com/watch?v=5VzhagUtdh0”> 1min video</a>.) 
+  -I’m also really proud that the problem we were trying to solve was 
+  -such a real one. 
+    -such a real one.
+    -Before mentorship platforms became popular, 
+      -While lots of mentorship platforms (like ADPList) have launched since Command+J,
+    -we were the first to do this for Indian designers across all fields of design, not just UX. 
+  -To think that
+  -two college kids,
+    -Viba and I, two college kids,
+  -conceptualized and executed this during a summer break, is crazy to me.
+  -<br>
+  -<br>
+  -Our original mission
+    -We wanted to provide a platform for mentorship across all fields of design (Textile, Animation, Automobile etc.), and focus primarily on
+    -Indian mentors. 
+      -Indian mentors. There are lots of people worldwide who "made it". But, it feels more achievable to see someone
+      -you identify with
+        -who looks like you, and grew up in conditions similar to yours — and then
+      -"make it”. 
+    -Despite the millions of $ in valuation this sector has raised, this
+  -is still an extremely important and unmet need for junior designers and students in India. I hope we see more innovation in this space. 
+
+  `
+  const config = { textMode: TextMode.Html };
+  const telescopicContent = createTelescopicTextFromBulletedList(content, config);
+  const container = document.getElementById("telescopicPoem");
+  container.appendChild(telescopicContent);
+
+</script>
+
+<br>
+Our journey might be coming to a close, but the impact lives on.
+<p>Thank you for being part of the Command+J family. 🚀</p>
+</article>
+</section>
+
+</body>
+</html>
