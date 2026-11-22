@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dansk Drill</title>
+<link rel="stylesheet" href="style.css?v=e5dc1ae9">
+</head>
+<body>
+
+<!-- ============================= HOME ============================= -->
+<section id="screen-home" class="screen active">
+  <header class="site-head">
+    <h1>Dansk Drill</h1>
+    <p class="sub">Reps, not explanations. Module 1 (all) + Module 2 Kapitel 1&ndash;2.</p>
+  </header>
+
+  <div class="freeforall">
+    <button id="btn-freeforall" class="big-btn">
+      <span class="big-btn-title">Free-for-all</span>
+      <span class="big-btn-sub">Every card type, every category, shuffled &middot; <span id="total-count">0</span> cards</span>
+    </button>
+    <div class="row-btns">
+      <button id="btn-missed" class="ghost-btn" title="Cards you marked wrong in earlier sessions">Replay my misses (<span id="missed-count">0</span>)</button>
+      <button id="btn-copy-progress" class="ghost-btn" title="Copy your misses as one line, to paste on your other device">Copy progress</button>
+      <button id="btn-paste-progress" class="ghost-btn" title="Paste the line copied on your other device">Paste progress</button>
+    </div>
+  </div>
+
+  <h2 class="section-label">By category</h2>
+  <div id="category-grid" class="grid"></div>
+
+  <h2 class="section-label">By card type</h2>
+  <div id="type-grid" class="grid grid-type"></div>
+
+  <footer class="home-foot">
+    <div id="history-summary" class="history"></div>
+    <div class="row-btns">
+      <button id="btn-export" class="ghost-btn">Export my edits &amp; stats</button>
+      <button id="btn-reset" class="ghost-btn danger">Reset all saved data</button>
+    </div>
+  </footer>
+</section>
+
+<!-- ============================= SESSION ============================= -->
+<section id="screen-session" class="screen">
+  <div class="topbar">
+    <button id="btn-quit" class="icon-btn" aria-label="Back to home">&larr;</button>
+    <div class="progress">
+      <div class="progress-bar"><div id="progress-fill"></div></div>
+      <div class="progress-text"><span id="pos">1</span> / <span id="len">1</span></div>
+    </div>
+    <div class="score">
+      <span class="ok" id="score-right">0</span>
+      <span class="sep">/</span>
+      <span class="bad" id="score-wrong">0</span>
+    </div>
+  </div>
+
+  <div id="card-host"></div>
+</section>
+
+<!-- ============================= RESULTS ============================= -->
+<section id="screen-results" class="screen">
+  <div class="results-wrap">
+    <h2 id="results-title">Session done</h2>
+    <div class="bigscore"><span id="r-right">0</span><span class="slash">/</span><span id="r-total">0</span></div>
+    <p id="r-pct" class="pct"></p>
+    <div id="r-breakdown" class="breakdown"></div>
+    <div id="r-missed" class="missed-list"></div>
+    <div class="row-btns center">
+      <button id="btn-again" class="big-btn compact">Run it again</button>
+      <button id="btn-retry-missed" class="ghost-btn">Drill just the misses</button>
+      <button id="btn-copy-progress-results" class="ghost-btn">Copy progress</button>
+      <button id="btn-home" class="ghost-btn">Home</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= MODAL (export, copy/paste progress) ============================= -->
+<div id="modal" class="modal">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-head">
+      <h3 id="modal-title"></h3>
+      <button id="modal-close" class="icon-btn" aria-label="Close">&times;</button>
+    </div>
+    <p id="modal-hint" class="modal-hint"></p>
+    <textarea id="modal-text" spellcheck="false" autocorrect="off" autocapitalize="none"></textarea>
+    <p id="modal-status" class="modal-status" role="status"></p>
+    <div id="modal-actions" class="row-btns"></div>
+  </div>
+</div>
+
+<script src="lib/dndkit.js?v=e5dc1ae9"></script>
+<script src="data.js?v=e5dc1ae9"></script>
+<script src="app.js?v=e5dc1ae9"></script>
+</body>
+</html>
