@@ -272,8 +272,13 @@ button:focus-visible, input:focus-visible, textarea:focus-visible {
 }
 .act:hover { border-color: var(--accent); }
 .act.primary { background: var(--accent-dim); border-color: var(--accent); }
-.act.good { background: var(--ok-dim); border-color: var(--ok); color: var(--ok); }
-.act.bad  { background: var(--bad-dim); border-color: var(--bad); color: var(--bad); }
+/* Self-grade buttons: coloured text until picked, then filled with a ring. */
+.act.good { color: var(--ok); }
+.act.bad  { color: var(--bad); }
+.act.good.chosen { background: var(--ok-dim); border-color: var(--ok); box-shadow: 0 0 0 2px var(--ok); }
+.act.bad.chosen  { background: var(--bad-dim); border-color: var(--bad); box-shadow: 0 0 0 2px var(--bad); }
+.act[disabled] { opacity: .4; cursor: not-allowed; }
+.act[disabled]:hover { border-color: var(--line); }
 .act .kbd { display: block; font-size: 11px; font-weight: 500; color: var(--fg-faint); margin-top: 2px; }
 
 /* ---------- text input ---------- */

@@ -353,23 +353,51 @@ function renderFlip(wrap, card) {
       block.appendChild(row);
     }
 
-    const grades = el('div', 'actions');
-    const good = el('button', 'act good');
-    good.innerHTML = 'Got it<span class="kbd">1</span>';
-    const bad = el('button', 'act bad');
-    bad.innerHTML = 'Missed it<span class="kbd">2</span>';
-    good.addEventListener('click', () => grade(true));
-    bad.addEventListener('click', () => grade(false));
-    grades.appendChild(good);
-    grades.appendChild(bad);
-    block.appendChild(grades);
-
     wrap.appendChild(block);
-    setKeys({ '1': () => grade(true), '2': () => grade(false) });
+    addSelfGrade(block, 'Got it', 'Missed it');
   };
 
   flipBtn.addEventListener('click', reveal);
   setKeys({ ' ': reveal, Enter: reveal });
+}
+
+/* Self-graded cards (Flip, Sentence): marking right or wrong only records the
+   choice, and you can change your mind. Moving on is always Next / Enter, which
+   stays disabled until something is marked. Same rhythm as the auto-graded cards. */
+function addSelfGrade(block, rightLabel, wrongLabel) {
+  let choice = null;
+
+  const grades = el('div', 'actions');
+  const good = el('button', 'act good');
+  good.innerHTML = `${rightLabel}<span class="kbd">1</span>`;
+  const bad = el('button', 'act bad');
+  bad.innerHTML = `${wrongLabel}<span class="kbd">2</span>`;
+  grades.appendChild(good);
+  grades.appendChild(bad);
+
+  const nextRow = el('div', 'actions');
+  const next = el('button', 'act primary');
+  next.innerHTML = 'Next<span class="kbd">enter</span>';
+  next.disabled = true;
+  nextRow.appendChild(next);
+
+  const pick = (isRight) => {
+    choice = isRight;
+    good.classList.toggle('chosen', isRight);
+    bad.classList.toggle('chosen', !isRight);
+    good.setAttribute('aria-pressed', String(isRight));
+    bad.setAttribute('aria-pressed', String(!isRight));
+    next.disabled = false;
+    next.focus();   // so Enter on the focused button moves on, not re-marks
+  };
+  const advance = () => { if (choice !== null) grade(choice); };
+
+  good.addEventListener('click', () => pick(true));
+  bad.addEventListener('click', () => pick(false));
+  next.addEventListener('click', advance);
+  block.appendChild(grades);
+  block.appendChild(nextRow);
+  setKeys({ '1': () => pick(true), '2': () => pick(false), Enter: advance });
 }
 
 /* Wrap the Danish half of "Danish (English)" examples in <em>. */
@@ -747,19 +775,8 @@ function renderSentence(wrap, card) {
     block.appendChild(el('p', 'answer', card.modelAnswer));
     if (card.note) block.appendChild(el('div', 'note', card.note));
 
-    const grades = el('div', 'actions');
-    const good = el('button', 'act good');
-    good.innerHTML = 'Close enough<span class="kbd">1</span>';
-    const bad = el('button', 'act bad');
-    bad.innerHTML = 'Got it wrong<span class="kbd">2</span>';
-    good.addEventListener('click', () => grade(true));
-    bad.addEventListener('click', () => grade(false));
-    grades.appendChild(good);
-    grades.appendChild(bad);
-    block.appendChild(grades);
-
     wrap.appendChild(block);
-    setKeys({ '1': () => grade(true), '2': () => grade(false) });
+    addSelfGrade(block, 'Close enough', 'Got it wrong');
   };
 
   submit.addEventListener('click', reveal);
@@ -928,7 +945,9 @@ function progressCode() {
 
 // Returns a short message for the person; throws an Error with a readable message on bad input.
 function importProgress(text) {
-  const found = String(text).match(/DD1:([A-Za-z0-9+/=\s]+)/);
+  // The prefix is matched in any case: phones and chat apps like to lowercase
+  // "DD1". The code after it is case-sensitive and is left untouched.
+  const found = String(text).match(/dd1:([A-Za-z0-9+/=\s]+)/i);
   if (!found) throw new Error('That doesn\'t look like a progress code. It should start with DD1:');
   let data;
   try {
