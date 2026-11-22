@@ -277,8 +277,21 @@ button:focus-visible, input:focus-visible, textarea:focus-visible {
 .act.bad  { color: var(--bad); }
 .act.good.chosen { background: var(--ok-dim); border-color: var(--ok); box-shadow: 0 0 0 2px var(--ok); }
 .act.bad.chosen  { background: var(--bad-dim); border-color: var(--bad); box-shadow: 0 0 0 2px var(--bad); }
-.act[disabled] { opacity: .4; cursor: not-allowed; }
-.act[disabled]:hover { border-color: var(--line); }
+.act[disabled], .act.waiting { opacity: .4; cursor: not-allowed; }
+.act[disabled]:hover, .act.waiting:hover { border-color: var(--line); }
+
+/* Next pressed before marking: a little head shake, and the grade buttons light up. */
+.actions.nudge { animation: shake .4s ease; }
+.actions.nudge .act.good { border-color: var(--ok); background: var(--ok-dim); }
+.actions.nudge .act.bad  { border-color: var(--bad); background: var(--bad-dim); }
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-7px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(2px); }
+}
+@media (prefers-reduced-motion: reduce) { .actions.nudge { animation: none; } }
 .act .kbd { display: block; font-size: 11px; font-weight: 500; color: var(--fg-faint); margin-top: 2px; }
 
 /* ---------- text input ---------- */

@@ -378,7 +378,7 @@ function addSelfGrade(block, rightLabel, wrongLabel) {
   const nextRow = el('div', 'actions');
   const next = el('button', 'act primary');
   next.innerHTML = 'Next<span class="kbd">enter</span>';
-  next.disabled = true;
+  next.classList.add('waiting');   // looks disabled, but still clickable so it can nudge
   nextRow.appendChild(next);
 
   const pick = (isRight) => {
@@ -387,10 +387,16 @@ function addSelfGrade(block, rightLabel, wrongLabel) {
     bad.classList.toggle('chosen', !isRight);
     good.setAttribute('aria-pressed', String(isRight));
     bad.setAttribute('aria-pressed', String(!isRight));
-    next.disabled = false;
+    next.classList.remove('waiting');
     next.focus();   // so Enter on the focused button moves on, not re-marks
   };
-  const advance = () => { if (choice !== null) grade(choice); };
+  // Moving on before marking: shake the two grade buttons and light them up.
+  const advance = () => {
+    if (choice !== null) { grade(choice); return; }
+    grades.classList.remove('nudge');
+    void grades.offsetWidth;   // restart the animation on repeated presses
+    grades.classList.add('nudge');
+  };
 
   good.addEventListener('click', () => pick(true));
   bad.addEventListener('click', () => pick(false));
